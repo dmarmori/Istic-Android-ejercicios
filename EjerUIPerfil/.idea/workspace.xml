@@ -6,9 +6,9 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8295f602-972e-47e9-9c2f-f6b49ded5418" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+    <list default="true" id="6073ae31-97b0-4b45-a1d3-1ec52802c090" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../AppEjemplo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppEjemplo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../AppEjemplo/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../AppEjemplo/app/app.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,16 +29,12 @@
       </state>
     </system>
   </component>
-  <component name="GenerateSignedApkSettings">
-    <option name="BUILD_TARGET_KEY" value="apk" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1av2sz2ZVqTZ71qvhyld8XeRaQV" />
+  <component name="ProjectId" id="1b5ioKF3SXGVK32YrhCs4VpI0pz" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="ApkExportedModule" value="app" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
   </component>
   <component name="RunDashboard">
@@ -61,7 +57,7 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="app" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
@@ -118,11 +114,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="8295f602-972e-47e9-9c2f-f6b49ded5418" name="Default Changelist" comment="" />
-      <created>1587601957469</created>
+      <changelist id="6073ae31-97b0-4b45-a1d3-1ec52802c090" name="Default Changelist" comment="" />
+      <created>1587928528883</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1587601957469</updated>
+      <updated>1587928528883</updated>
     </task>
     <servers />
   </component>
@@ -131,9 +127,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
