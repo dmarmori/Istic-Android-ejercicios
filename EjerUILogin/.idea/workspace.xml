@@ -6,8 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6073ae31-97b0-4b45-a1d3-1ec52802c090" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3a62dbc5-d21e-4338-8ced-6c2f69effb53" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../EjerUIPerfil/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EjerUIPerfil/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_2_API_29" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="ZY225FS2PK" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -28,16 +28,12 @@
       </state>
     </system>
   </component>
-  <component name="GenerateSignedApkSettings">
-    <option name="BUILD_TARGET_KEY" value="apk" />
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1b5ioKF3SXGVK32YrhCs4VpI0pz" />
+  <component name="ProjectId" id="1bEkH4Pm4Xfrln4HgRjMZ2chtJm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="ApkExportedModule" value="app" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
   </component>
   <component name="RunDashboard">
@@ -117,11 +113,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6073ae31-97b0-4b45-a1d3-1ec52802c090" name="Default Changelist" comment="" />
-      <created>1587928528883</created>
+      <changelist id="3a62dbc5-d21e-4338-8ced-6c2f69effb53" name="Default Changelist" comment="" />
+      <created>1588204548313</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1587928528883</updated>
+      <updated>1588204548313</updated>
     </task>
     <servers />
   </component>
@@ -130,9 +126,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
