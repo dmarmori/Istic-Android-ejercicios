@@ -6,8 +6,8 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d189763-99a7-41c7-877f-3f2c0b98b7bb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="93412cd9-ce56-4e49-9b57-a44741984da8" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../EjerUIRegistro/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EjerUIRegistro/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,7 +31,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1bEphNywoRqRAxFHSB8pJpk0P2T" />
+  <component name="ProjectId" id="1bEtN6ozDVh6L2hk6nee2jqNaAk" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
@@ -113,11 +113,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d189763-99a7-41c7-877f-3f2c0b98b7bb" name="Default Changelist" comment="" />
-      <created>1588207226018</created>
+      <changelist id="93412cd9-ce56-4e49-9b57-a44741984da8" name="Default Changelist" comment="" />
+      <created>1588209037112</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588207226018</updated>
+      <updated>1588209037112</updated>
     </task>
     <servers />
   </component>

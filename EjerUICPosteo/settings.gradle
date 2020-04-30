@@ -1,0 +1,2 @@
+rootProject.name='EjerUICPosteo'
+include ':app'
