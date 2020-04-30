@@ -6,10 +6,10 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3a62dbc5-d21e-4338-8ced-6c2f69effb53" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../EjerUIRegistro/EjerUIRegistro.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../EjerUIRegistro/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="1d189763-99a7-41c7-877f-3f2c0b98b7bb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/EjerUIRegistro.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../EjerUILogin/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../EjerUILogin/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,10 +33,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="ProjectId" id="1bEkH4Pm4Xfrln4HgRjMZ2chtJm" />
+  <component name="ProjectId" id="1bEphNywoRqRAxFHSB8pJpk0P2T" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
   </component>
   <component name="RunDashboard">
@@ -116,11 +115,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3a62dbc5-d21e-4338-8ced-6c2f69effb53" name="Default Changelist" comment="" />
-      <created>1588204548313</created>
+      <changelist id="1d189763-99a7-41c7-877f-3f2c0b98b7bb" name="Default Changelist" comment="" />
+      <created>1588207226018</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1588204548313</updated>
+      <updated>1588207226018</updated>
     </task>
     <servers />
   </component>
