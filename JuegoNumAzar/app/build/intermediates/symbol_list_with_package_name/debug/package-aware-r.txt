@@ -848,6 +848,7 @@ id text2
 id textJuegoDeAzar
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView2
 id time
 id title
 id titleDividerNoCustom

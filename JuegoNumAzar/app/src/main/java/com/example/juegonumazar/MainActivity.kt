@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity() {
 
 
         btnAdivinar.setOnClickListener{
-           //lblNombre.text = numeroSecreto.toString()
             if(numeroSecreto.toString() == txtIngNum.text.toString()){
                 Toast.makeText(this,"Crak ", Toast.LENGTH_LONG).show()
 

@@ -19,10 +19,13 @@
 
     <TextView
         android:id="@+id/textJuegoDeAzar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="155dp"
+        android:layout_height="38dp"
         android:layout_marginTop="36dp"
         android:text="JuegoDeAzar"
+        android:textColor="#FF5722"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,22 +34,21 @@
         android:id="@+id/txtIngNum"
         android:layout_width="75dp"
         android:layout_height="49dp"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="40dp"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textJuegoDeAzar" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <Button
         android:id="@+id/btnAyuda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="356dp"
-        android:layout_marginEnd="140dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="352dp"
         android:text="Ayuda"
-        app:layout_constraintEnd_toStartOf="@+id/btnMeRindo"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/btnAdivinar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -54,10 +56,22 @@
         android:id="@+id/btnMeRindo"
         android:layout_width="92dp"
         android:layout_height="49dp"
-        android:layout_marginTop="364dp"
+        android:layout_marginTop="352dp"
         android:layout_marginEnd="60dp"
         android:text="Me Rindo"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAdivinar"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Ingrese un numero del 1 al 100"
+        android:textColor="#FF5722"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textJuegoDeAzar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
