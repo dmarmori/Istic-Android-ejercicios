@@ -741,7 +741,7 @@ id barrier
 id beginning
 id blocking
 id bottom
-id btnCambiarNombre
+id btnAdivinar
 id buttonPanel
 id center_vertical
 id chains
@@ -844,6 +844,7 @@ id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id text
 id text2
+id textJuegoDeAzar
 id textSpacerNoButtons
 id textSpacerNoTitle
 id time
@@ -852,7 +853,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
-id txtNombre
+id txtIngNum
 id unchecked
 id uniform
 id up
