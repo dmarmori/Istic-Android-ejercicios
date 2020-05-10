@@ -7,8 +7,9 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    val numeroSecreto=(Math.random() * 100).toInt()
-    var vidas:Int = 4
+    val numeroSecreto=1//(Math.random() * 100).toInt()
+    var vidas:Int = 5
+    var intentos:Int = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
         txtVidas.text = "Vidas restantes: $vidas"
+        txtIntentos.text = "Numero de intentos: $intentos"
 
         btnAyuda.setOnClickListener{
 
@@ -37,16 +39,33 @@ class MainActivity : AppCompatActivity() {
 
         btnAdivinar.setOnClickListener{
 
+         if (vidas > 1) {
+             if (numeroSecreto.toString() == txtIngNum.text.toString()) {
+                 Toast.makeText(this, "Crak ", Toast.LENGTH_LONG).show()
+                 vidas = vidas - 1
+                 intentos = intentos + 1
+                 txtVidas.text = "Vidas restantes: " + vidas
+                 txtIntentos.text = "Numero de intentos: " + intentos
+                 btnAdivinar.isEnabled = false
+                 btnAyuda.isEnabled = false
 
-            if(numeroSecreto.toString() == txtIngNum.text.toString()){
-                Toast.makeText(this,"Crak ", Toast.LENGTH_LONG).show()
-
-            }else
-            {
-                Toast.makeText(this,"No es el numero ", Toast.LENGTH_LONG).show()
-                vidas = vidas - 1
-                txtVidas.text = "Vidas restantes: " + vidas
-            }
+             } else {
+                 Toast.makeText(this, "No es el numero ", Toast.LENGTH_LONG).show()
+                 vidas = vidas - 1
+                 intentos = intentos + 1
+                 txtVidas.text = "Vidas restantes: " + vidas
+                 txtIntentos.text = "Numero de intentos: " + intentos
+             }
+         }else
+         {
+             Toast.makeText(this, "PERDISTE GATO DE LOMAS ", Toast.LENGTH_LONG).show()
+             vidas = vidas - 1
+             intentos = intentos + 1
+             txtVidas.text = "Vidas restantes: " + vidas
+             txtIntentos.text = "Numero de intentos: " + intentos
+             btnAdivinar.isEnabled = false
+             btnAyuda.isEnabled = false
+         }
 
         }
 

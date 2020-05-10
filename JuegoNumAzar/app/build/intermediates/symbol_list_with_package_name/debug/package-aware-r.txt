@@ -856,6 +856,7 @@ id title_template
 id top
 id topPanel
 id txtIngNum
+id txtIntentos
 id txtVidas
 id unchecked
 id uniform
