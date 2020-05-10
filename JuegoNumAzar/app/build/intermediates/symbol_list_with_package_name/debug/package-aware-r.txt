@@ -742,6 +742,8 @@ id beginning
 id blocking
 id bottom
 id btnAdivinar
+id btnAyuda
+id btnMeRindo
 id buttonPanel
 id center_vertical
 id chains
@@ -776,7 +778,6 @@ id image
 id info
 id invisible
 id italic
-id lblNombre
 id left
 id line1
 id line3
