@@ -8,12 +8,19 @@ import kotlinx.android.synthetic.main.activity_main.*
 class MainActivity : AppCompatActivity() {
 
     val numeroSecreto=(Math.random() * 100).toInt()
+    var vidas:Int = 4
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+
+
+        txtVidas.text = "Vidas restantes: $vidas"
+
         btnAyuda.setOnClickListener{
+
             if(numeroSecreto <= 50)
             {
                 Toast.makeText(this,"Numero Menor a 51 ", Toast.LENGTH_LONG).show()
@@ -29,13 +36,18 @@ class MainActivity : AppCompatActivity() {
 
 
         btnAdivinar.setOnClickListener{
+
+
             if(numeroSecreto.toString() == txtIngNum.text.toString()){
                 Toast.makeText(this,"Crak ", Toast.LENGTH_LONG).show()
 
             }else
             {
                 Toast.makeText(this,"No es el numero ", Toast.LENGTH_LONG).show()
+                vidas = vidas - 1
+                txtVidas.text = "Vidas restantes: " + vidas
             }
+
         }
 
     }
