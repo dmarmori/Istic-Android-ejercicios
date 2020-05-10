@@ -855,6 +855,7 @@ id titleDividerNoCustom
 id title_template
 id top
 id topPanel
+id txtGanaste
 id txtIngNum
 id txtIntentos
 id txtVidas

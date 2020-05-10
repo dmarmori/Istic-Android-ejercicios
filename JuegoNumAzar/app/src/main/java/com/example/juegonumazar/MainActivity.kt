@@ -2,14 +2,19 @@ package com.example.juegonumazar
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Toast
+import androidx.core.view.isInvisible
+import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     val numeroSecreto=1//(Math.random() * 100).toInt()
+
     var vidas:Int = 5
     var intentos:Int = 0
+
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +38,7 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnMeRindo.setOnClickListener{
-            Toast.makeText(this,"El numero es: $numeroSecreto" , Toast.LENGTH_LONG).show()
+           Toast.makeText(this,"El numero es: $numeroSecreto" , Toast.LENGTH_LONG).show()
         }
 
 
@@ -48,6 +53,7 @@ class MainActivity : AppCompatActivity() {
                  txtIntentos.text = "Numero de intentos: " + intentos
                  btnAdivinar.isEnabled = false
                  btnAyuda.isEnabled = false
+                 txtGanaste.visibility = View.VISIBLE
 
              } else {
                  Toast.makeText(this, "No es el numero ", Toast.LENGTH_LONG).show()
@@ -58,7 +64,7 @@ class MainActivity : AppCompatActivity() {
              }
          }else
          {
-             Toast.makeText(this, "PERDISTE GATO DE LOMAS ", Toast.LENGTH_LONG).show()
+             Toast.makeText(this, "PERDISTE JAJAJAJAJAJA", Toast.LENGTH_LONG).show()
              vidas = vidas - 1
              intentos = intentos + 1
              txtVidas.text = "Vidas restantes: " + vidas
