@@ -854,9 +854,9 @@ int id titleDividerNoCustom 0x7f0700b0
 int id title_template 0x7f0700b1
 int id top 0x7f0700b2
 int id topPanel 0x7f0700b3
-int id txtGanaste 0x7f0700b4
-int id txtIngNum 0x7f0700b5
-int id txtIntentos 0x7f0700b6
+int id txtIngNum 0x7f0700b4
+int id txtIntentos 0x7f0700b5
+int id txtResFinal 0x7f0700b6
 int id txtVidas 0x7f0700b7
 int id unchecked 0x7f0700b8
 int id uniform 0x7f0700b9
