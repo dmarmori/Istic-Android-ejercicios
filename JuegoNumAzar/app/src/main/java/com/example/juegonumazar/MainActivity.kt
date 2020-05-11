@@ -3,13 +3,14 @@ package com.example.juegonumazar
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.view.ViewAnimationUtils
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     val numeroSecreto=1//(Math.random() * 100).toInt()
+
+    val validaNum = 100
 
     var vidas:Int = 5
     var intentos:Int = 0
@@ -18,7 +19,7 @@ class MainActivity : AppCompatActivity() {
 
 
 
-    override fun onCreate(savedInstanceState: Bundle?) {
+        override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -26,6 +27,8 @@ class MainActivity : AppCompatActivity() {
 
         txtVidas.text = "Vidas restantes: $vidas"
         txtIntentos.text = "Numero de intentos: $intentos"
+
+
 
         btnAyuda.setOnClickListener{
                 when(ayuda)
@@ -75,50 +78,56 @@ class MainActivity : AppCompatActivity() {
 
         btnAdivinar.setOnClickListener{
 
-         if (vidas > 1) {
-             if (numeroSecreto.toString() == txtIngNum.text.toString()) {
-                 if (ayuda < 3) {
-                     Toast.makeText(this, "Ganaste con ayudin ", Toast.LENGTH_LONG).show()
-                     txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
-                 }else
-                 {
-                     Toast.makeText(this, "Ganaste Crak ", Toast.LENGTH_LONG).show()
-                     txtResFinal.text = "GANASTE CON AYUDIN COMO RIBER"
-                 }
-                 vidas = vidas - 1
-                 intentos = intentos + 1
-                 txtVidas.text = "Vidas restantes: " + vidas
-                 txtIntentos.text = "Numero de intentos: " + intentos
-                 btnAdivinar.isEnabled = false
-                 btnAyuda.isEnabled = false
-                 btnMeRindo.isEnabled = false
-                 txtIngNum.isEnabled = false
-                 txtResFinal.visibility = View.VISIBLE
+            if (1 == 1) {
+
+                if (vidas > 1) {
+                    if (numeroSecreto.toString() == txtIngNum.text.toString()) {
+                        if (ayuda < 3) {
+                            Toast.makeText(this, "Ganaste Crack ", Toast.LENGTH_LONG).show()
+                            txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
+                        } else {
+                            Toast.makeText(this, "Ganaste con ayudin ", Toast.LENGTH_LONG).show()
+                            txtResFinal.text = "GANASTE CON AYUDIN COMO RIBER"
+                        }
+                        vidas = vidas - 1
+                        intentos = intentos + 1
+                        txtVidas.text = "Vidas restantes: " + vidas
+                        txtIntentos.text = "Numero de intentos: " + intentos
+                        btnAdivinar.isEnabled = false
+                        btnAyuda.isEnabled = false
+                        btnMeRindo.isEnabled = false
+                        txtIngNum.isEnabled = false
+                        txtResFinal.visibility = View.VISIBLE
 
 
-             } else {
-                 Toast.makeText(this, "No es el numero ", Toast.LENGTH_LONG).show()
-                 vidas = vidas - 1
-                 intentos = intentos + 1
-                 txtVidas.text = "Vidas restantes: " + vidas
-                 txtIntentos.text = "Numero de intentos: " + intentos
-             }
-         }else
-         {
-             Toast.makeText(this, "PERDISTE JAJAJAJAJAJA", Toast.LENGTH_LONG).show()
-             vidas = vidas - 1
-             intentos = intentos + 1
-             txtVidas.text = "Vidas restantes: " + vidas
-             txtIntentos.text = "Numero de intentos: " + intentos
-             btnAdivinar.isEnabled = false
-             btnMeRindo.isEnabled = false
-             btnAyuda.isEnabled = false
-             txtIngNum.isEnabled = false
-             txtResFinal.text = "PERDISTE!!! SEGURO SOS DE RIBER"
-             txtResFinal.visibility = View.VISIBLE
-             txtResFinal.setTextColor(txtResFinal.getContext().getResources().getColor(R.color.colorPrimary))
+                    } else {
+                        Toast.makeText(this, "No es el numero ", Toast.LENGTH_LONG).show()
+                        vidas = vidas - 1
+                        intentos = intentos + 1
+                        txtVidas.text = "Vidas restantes: " + vidas
+                        txtIntentos.text = "Numero de intentos: " + intentos
+                    }
+                } else {
+                    Toast.makeText(this, "PERDISTE JAJAJAJAJAJA", Toast.LENGTH_LONG).show()
+                    vidas = vidas - 1
+                    intentos = intentos + 1
+                    txtVidas.text = "Vidas restantes: " + vidas
+                    txtIntentos.text = "Numero de intentos: " + intentos
+                    btnAdivinar.isEnabled = false
+                    btnMeRindo.isEnabled = false
+                    btnAyuda.isEnabled = false
+                    txtIngNum.isEnabled = false
+                    txtResFinal.text = "PERDISTE!!! SEGURO SOS DE RIBER"
+                    txtResFinal.visibility = View.VISIBLE
+                    txtResFinal.setTextColor(
+                        txtResFinal.getContext().getResources().getColor(R.color.colorPrimary)
+                    )
 
-         }
+                }
+            }else
+            {
+                Toast.makeText(this, "El nuemero debe ser MENOR A 100", Toast.LENGTH_LONG).show()
+            }
 
         }
 
