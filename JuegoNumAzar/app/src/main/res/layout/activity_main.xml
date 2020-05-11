@@ -104,7 +104,21 @@
         android:id="@+id/txtIntentos"
         android:layout_width="390dp"
         android:layout_height="35dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="40dp"
+        android:text="TextView"
+        android:textAlignment="center"
+        android:textColor="#C62828"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.476"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtVidas" />
+
+    <TextView
+        android:id="@+id/txtAyuda"
+        android:layout_width="390dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="120dp"
         android:text="TextView"
         android:textAlignment="center"
         android:textColor="#C62828"

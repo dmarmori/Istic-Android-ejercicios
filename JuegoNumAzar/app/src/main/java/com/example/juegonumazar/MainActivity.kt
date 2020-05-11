@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     var vidas:Int = 5
     var intentos:Int = 0
+    var numAyuda:Int = 3
     var ayuda:Int = 1
     var numeroMultiplicado:Int = 0
 
@@ -27,10 +28,10 @@ class MainActivity : AppCompatActivity() {
 
         txtVidas.text = "Vidas restantes: $vidas"
         txtIntentos.text = "Numero de intentos: $intentos"
+        txtAyuda.text = "Ayudas disponibles: $numAyuda"
+///////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
-        btnAyuda.setOnClickListener{
+        btnAyuda.setOnClickListener{ //Boton de ayuda
                 when(ayuda)
                 {
                     1 ->
@@ -63,9 +64,15 @@ class MainActivity : AppCompatActivity() {
                 }
 
             ayuda = ayuda + 1
-        }
+            if(numAyuda > 0) {
+                numAyuda = numAyuda - 1
+                txtAyuda.text = "Ayudas disponibles: " + numAyuda
+            }
 
-        btnMeRindo.setOnClickListener{
+        }
+////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        btnMeRindo.setOnClickListener{ //Boton me rindo
            Toast.makeText(this,"El numero es: $numeroSecreto" , Toast.LENGTH_LONG).show()
             btnAdivinar.isEnabled = false
             btnAyuda.isEnabled = false
@@ -75,8 +82,9 @@ class MainActivity : AppCompatActivity() {
             txtResFinal.setTextColor(txtResFinal.getContext().getResources().getColor(R.color.colorPrimary))
         }
 
+  //////////////////////////////////////////////////////////////////////////////////////////////
 
-        btnAdivinar.setOnClickListener{
+        btnAdivinar.setOnClickListener{//boton avidinar
 
             if (1 == 1) {
 
