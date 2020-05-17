@@ -15,5 +15,11 @@ class Menu : AppCompatActivity() {
             val ContadorIntent = Intent(this, Contador::class.java)
             startActivity(ContadorIntent)
         }
+
+        btnNumSec.setOnClickListener {
+            val NumeSecretIntent = Intent(this, NumeroSecreto::class.java)
+            startActivity(NumeSecretIntent)
+        }
+
     }
 }

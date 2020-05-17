@@ -19,6 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.example.a1erparcial.NumeroSecreto" />
         <activity android:name="com.example.a1erparcial.Contador" />
         <activity android:name="com.example.a1erparcial.Menu" />
         <activity android:name="com.example.a1erparcial.Registro" />
