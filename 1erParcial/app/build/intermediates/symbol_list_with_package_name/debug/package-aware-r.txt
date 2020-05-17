@@ -742,6 +742,8 @@ id barrier
 id beginning
 id blocking
 id bottom
+id btnIngresar
+id btnRegistrarme
 id button
 id button2
 id buttonPanel
@@ -761,10 +763,6 @@ id dialog_button
 id dimensions
 id direct
 id disableHome
-id editText
-id editText3
-id editText4
-id editText5
 id edit_query
 id end
 id expand_activities_button
@@ -781,6 +779,7 @@ id ifRoom
 id image
 id imageView
 id imageView2
+id imageView3
 id info
 id invisible
 id italic
@@ -853,6 +852,9 @@ id text
 id text2
 id textSpacerNoButtons
 id textSpacerNoTitle
+id textView
+id textView2
+id textView3
 id time
 id title
 id titleDividerNoCustom
@@ -860,7 +862,11 @@ id title_template
 id top
 id topPanel
 id txtClaveLogin
+id txtMailUsuario
+id txtRegistroClave
 id txtRegistroLogin
+id txtRegistroRepClave
+id txtRegistroUsuario
 id txtUsuarioLogin
 id unchecked
 id uniform
@@ -910,6 +916,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_menu
 layout activity_registro
 layout custom_dialog
 layout notification_action

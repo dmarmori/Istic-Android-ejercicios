@@ -15,8 +15,13 @@ class MainActivity : AppCompatActivity() {
 
 
         txtRegistroLogin.setOnClickListener{
-            var registoIntent = Intent(this, Registro::class.java)
+            val registoIntent = Intent(this, Registro::class.java)
             startActivity(registoIntent)
+        }
+
+        btnIngresar.setOnClickListener{
+            val menuIntent = Intent(this, Menu::class.java)
+            startActivity(menuIntent)
         }
     }
 }
