@@ -659,6 +659,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable btn_reunded
 drawable contar
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -744,9 +745,11 @@ id beginning
 id blocking
 id bottom
 id btnContador
+id btnContar
 id btnIngresar
 id btnNumSec
 id btnRegistrarme
+id btnReserContador
 id buttonPanel
 id center_vertical
 id chains
@@ -784,6 +787,7 @@ id imageView3
 id info
 id invisible
 id italic
+id lblContador
 id left
 id line1
 id line3
@@ -856,6 +860,7 @@ id textSpacerNoTitle
 id textView
 id textView2
 id textView3
+id textView4
 id time
 id title
 id titleDividerNoCustom
