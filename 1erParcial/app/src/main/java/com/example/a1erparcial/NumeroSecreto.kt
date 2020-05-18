@@ -1,5 +1,6 @@
 package com.example.a1erparcial
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -72,22 +73,18 @@ class NumeroSecreto : AppCompatActivity() {
 
         }
 
-        val bCenter = findViewById<Button>(R.id.btnMeRindo) as Button
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 
         btnMeRindo.setOnClickListener{ //Boton me rindo
 
-            //bCenter.setOnClickListener{
-
-            val toast = Toast.makeText(this@NumeroSecreto,"hola",Toast.LENGTH_SHORT)
+            val toast = Toast.makeText(this@NumeroSecreto,"El numero era: $numeroSecreto",Toast.LENGTH_SHORT)
             toast.setGravity(Gravity.CENTER,0,0)
             toast.show()
 
-            //Toast.makeText(this,"El numero es: $numeroSecreto" , Toast.LENGTH_LONG).show()
             btnAdivinar.isEnabled = false
             btnAyuda.isEnabled = false
             txtIngNum.isEnabled = false
-            txtResFinal.text = "ABANDONASTE COMO RIBER"
+            txtResFinal.text = "EL QUE ABANDONA NO TIENE PREMIO"
             txtResFinal.visibility = View.VISIBLE
 
             txtResFinal.setTextColor(txtResFinal.getContext().getResources().getColor(R.color.colorPrimary))
@@ -150,8 +147,9 @@ class NumeroSecreto : AppCompatActivity() {
 
         }
 
-        btnReset.setOnClickListener{
-            onRestart()
+        lblComoJugar.setOnClickListener{
+            val ComoJugartIntent = Intent(this, ComoJugarNumSecret::class.java)
+            startActivity(ComoJugartIntent)
         }
 
 

@@ -1,5 +1,6 @@
 package com.example.a1erparcial
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_contador.*
@@ -20,6 +21,11 @@ class Contador : AppCompatActivity() {
         btnReserContador.setOnClickListener {
             contador = 0
             lblContador.text = ""
+        }
+
+        lblayuda.setOnClickListener {
+            val ayudaIntent= Intent(this, ComoJugarContador::class.java)
+            startActivity(ayudaIntent)
         }
 
     }

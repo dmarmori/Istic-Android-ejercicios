@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NumeroSecreto"></activity>
+        <activity android:name=".ComoJugarContador"></activity>
+        <activity android:name=".ComoJugarNumSecret" />
+        <activity android:name=".NumeroSecreto" />
         <activity android:name=".Contador" />
         <activity android:name=".Menu" />
         <activity android:name=".Registro" />
