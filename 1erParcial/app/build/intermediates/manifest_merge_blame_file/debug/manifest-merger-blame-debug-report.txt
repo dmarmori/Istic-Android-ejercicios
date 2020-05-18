@@ -11,7 +11,7 @@
 9-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:5:5-25:19
+11-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:5:5-29:19
 12        android:allowBackup="true"
 12-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -61,6 +61,13 @@
 32-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:22:27-74
 33            </intent-filter>
 34        </activity>
-35    </application>
-36
-37</manifest>
+35
+36        <meta-data
+36-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:26:9-28:57
+37            android:name="preloaded_fonts"
+37-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:27:13-43
+38            android:resource="@array/preloaded_fonts" />
+38-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:28:13-54
+39    </application>
+40
+41</manifest>

@@ -60,12 +60,20 @@
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\font_archivo_black.xml.flat",
+        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\font\\archivo_black.xml"
+    },
+    {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_como_jugar_num_secret.xml.flat",
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\layout\\activity_como_jugar_num_secret.xml"
     },
     {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\drawable_fondo1.jpg.flat",
+        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\drawable\\fondo1.jpg"
     },
     {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_registro.xml.flat",
@@ -84,12 +92,12 @@
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\drawable\\login.png"
     },
     {
-        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_menu.xml.flat",
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\layout\\activity_menu.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\1erParcial\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
