@@ -665,6 +665,7 @@ drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
 drawable btn_reunded
 drawable contar
+drawable dionel
 drawable fondo1
 drawable ic_launcher_background
 drawable ic_launcher_foreground
@@ -803,6 +804,7 @@ id info
 id invisible
 id italic
 id lblComoJugar
+id lblComoJugar2
 id lblContador
 id lblayuda
 id left
