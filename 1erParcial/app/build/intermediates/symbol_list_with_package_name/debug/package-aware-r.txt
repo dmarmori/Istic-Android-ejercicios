@@ -787,6 +787,7 @@ id editText2
 id editText3
 id editText4
 id editText5
+id editText6
 id edit_query
 id end
 id expand_activities_button
