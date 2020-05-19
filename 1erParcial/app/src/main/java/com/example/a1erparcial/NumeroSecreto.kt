@@ -22,6 +22,8 @@ class NumeroSecreto : AppCompatActivity() {
     var ayuda:Int = 1
     var numeroMultiplicado:Int = 0
 
+    
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_numero_secreto)
