@@ -813,6 +813,7 @@ id italic
 id lblComoJugar
 id lblComoJugar2
 id lblContador
+id lblLegajo
 id lblayuda
 id left
 id line1
@@ -886,7 +887,6 @@ id textSpacerNoButtons
 id textSpacerNoTitle
 id textView
 id textView2
-id textView3
 id textView4
 id time
 id title

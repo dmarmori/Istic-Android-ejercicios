@@ -72,10 +72,11 @@
         app:srcCompat="@drawable/legajo" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/lblLegajo"
         android:layout_width="100dp"
         android:layout_height="42dp"
         android:fontFamily="@font/archivo_black"
+        android:linksClickable="true"
         android:text="11458"
         android:textAlignment="center"
         android:textColor="@android:color/background_light"
@@ -93,7 +94,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/lblLegajo"
         app:srcCompat="@drawable/arroba" />
 
     <ImageView
@@ -111,9 +112,12 @@
         android:id="@+id/lblComoJugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoLink="web"
         android:fontFamily="@font/archivo_black"
+        android:linksClickable="true"
         android:text="https://github.com/dmarmori"
         android:textColor="@android:color/background_light"
+        android:textColorLink="@android:color/background_light"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -124,9 +128,11 @@
         android:id="@+id/lblComoJugar2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoLink="email"
         android:fontFamily="@font/archivo_black"
         android:text="dmarmori@iiconcepcion.edu.ar"
         android:textColor="#FFFFFF"
+        android:textColorLink="#FFFFFF"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
