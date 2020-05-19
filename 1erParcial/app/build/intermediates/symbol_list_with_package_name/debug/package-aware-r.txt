@@ -655,6 +655,7 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arroba
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -667,8 +668,10 @@ drawable btn_reunded
 drawable contar
 drawable dionel
 drawable fondo1
+drawable git
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable legajo
 drawable login
 drawable notification_action_background
 drawable notification_bg
@@ -801,6 +804,8 @@ id imageView
 id imageView2
 id imageView3
 id imageView4
+id imageView5
+id imageView6
 id info
 id invisible
 id italic
