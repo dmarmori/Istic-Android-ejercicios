@@ -22,7 +22,12 @@ class NumeroSecreto : AppCompatActivity() {
     var ayuda:Int = 1
     var numeroMultiplicado:Int = 0
 
-    
+    fun ttoas(mensaje:String){//Funcion para mensaje toast
+
+        var toast = Toast.makeText(this@NumeroSecreto,"$mensaje",Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER,0,0)
+        toast.show()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,28 +46,28 @@ class NumeroSecreto : AppCompatActivity() {
                 1 ->
                     if (numeroSecreto <= 50)
                     {
-                        Toast.makeText(this, "Numero Menor a 51 ", Toast.LENGTH_LONG).show()
+                        this.ttoas("Numero Menor a 51")
                     } else
                     {
-                        Toast.makeText(this, "Numero mayor a 50 ", Toast.LENGTH_LONG).show()
+                        this.ttoas("Numero mayor a 50")
                     }
 
                 2 ->
                     if (numeroSecreto %2 == 0)
                     {
-                        Toast.makeText(this, "El numero es PAR", Toast.LENGTH_LONG).show()
+                        this.ttoas("El numero es PAR")
                     }else
                     {
-                        Toast.makeText(this, "El numero es IMPAR", Toast.LENGTH_LONG).show()
+                        this.ttoas("El numero es IMPAR")
                     }
                 3 ->
                 {
                     numeroMultiplicado = (numeroSecreto * 2 * 2 * 2 * 2)/2
-                    Toast.makeText(this, "(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado", Toast.LENGTH_LONG).show()
+                    this.ttoas("(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado")
                 }
                 else ->
                 {
-                    Toast.makeText(this, "(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado", Toast.LENGTH_LONG).show()
+                    this.ttoas("(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado")
                 }
 
             }
@@ -79,9 +84,10 @@ class NumeroSecreto : AppCompatActivity() {
 
         btnMeRindo.setOnClickListener{ //Boton me rindo
 
-            val toast = Toast.makeText(this@NumeroSecreto,"El numero era: $numeroSecreto",Toast.LENGTH_SHORT)
-            toast.setGravity(Gravity.CENTER,0,0)
-            toast.show()
+            //val toast = Toast.makeText(this@NumeroSecreto,"El numero era: $numeroSecreto",Toast.LENGTH_SHORT)
+            //toast.setGravity(Gravity.CENTER,0,0)
+            //toast.show()
+            this.ttoas("El numero era: $numeroSecreto")
 
             btnAdivinar.isEnabled = false
             btnAyuda.isEnabled = false
@@ -101,7 +107,7 @@ class NumeroSecreto : AppCompatActivity() {
                 if (vidas > 1) {
                     if (numeroSecreto.toString() == txtIngNum.text.toString()) {
                         if (ayuda < 3) {
-                            Toast.makeText(this, "Ganaste Crack ", Toast.LENGTH_LONG).show()
+                            this.ttoas("Ganaste Crack ")
                             txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
                         } else {
                             Toast.makeText(this, "Ganaste con ayudin ", Toast.LENGTH_LONG).show()
@@ -144,7 +150,7 @@ class NumeroSecreto : AppCompatActivity() {
                 }
             }else
             {
-                Toast.makeText(this, "El nuemero debe ser MENOR A 100", Toast.LENGTH_LONG).show()
+                this.ttoas("El nuemero debe ser MENOR A 100")
             }
 
         }
