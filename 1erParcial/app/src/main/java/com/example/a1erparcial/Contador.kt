@@ -13,8 +13,13 @@ class Contador : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_contador)
 
-        btnContar.setOnClickListener {
+        btnSumar.setOnClickListener {
             contador = contador +1
+            lblContador.text = contador.toString()
+        }
+
+        btnRestar.setOnClickListener {
+            contador = contador -1
             lblContador.text = contador.toString()
         }
 

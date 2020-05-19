@@ -757,13 +757,14 @@ id bottom
 id btnAdivinar
 id btnAyuda
 id btnContador
-id btnContar
 id btnIngresar
 id btnIrAContar
 id btnMeRindo
 id btnNumSec
 id btnRegistrarme
 id btnReserContador
+id btnRestar
+id btnSumar
 id buttonPanel
 id center_vertical
 id chains
