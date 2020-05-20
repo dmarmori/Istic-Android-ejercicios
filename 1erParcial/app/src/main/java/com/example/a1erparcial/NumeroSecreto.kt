@@ -29,6 +29,19 @@ class NumeroSecreto : AppCompatActivity() {
         toast.show()
     }
 
+    fun pista(NumeroPista:Int)
+    {
+        if (numeroSecreto.toString() > txtIngNum.text.toString())
+        {
+            this.ttoas("Dale para Arriba")
+        }
+        if (numeroSecreto.toString() < txtIngNum.text.toString())
+        {
+            this.ttoas("Dale para abajo")
+        }
+
+    }
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -119,8 +132,7 @@ class NumeroSecreto : AppCompatActivity() {
                                 this.ttoas("Ganaste Crack ")
                                 txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
                             } else {
-                                Toast.makeText(this, "Ganaste con ayudin ", Toast.LENGTH_LONG)
-                                    .show()
+                                this.ttoas("Ganaste con ayudin")
                                 txtResFinal.text = "GANASTE CON AYUDIN COMO RIBER"
                             }
                             vidas = vidas - 1
@@ -135,14 +147,15 @@ class NumeroSecreto : AppCompatActivity() {
 
 
                         } else {
-                            Toast.makeText(this, "No es el numero ", Toast.LENGTH_LONG).show()
+                            pista(txtIngNum.text.toString().toInt())
+                            //Toast.makeText(this, "No es el numero ", Toast.LENGTH_LONG).show()
                             vidas = vidas - 1
                             intentos = intentos + 1
                             txtVidas.text = "Vidas restantes: " + vidas
                             txtIntentos.text = "Numero de intentos: " + intentos
                         }
                     } else {
-                        Toast.makeText(this, "PERDISTE JAJAJAJAJAJA", Toast.LENGTH_LONG).show()
+                        this.ttoas("PERDISTE Intentalo otra vez")
                         vidas = vidas - 1
                         intentos = intentos + 1
                         txtVidas.text = "Vidas restantes: " + vidas
@@ -153,11 +166,8 @@ class NumeroSecreto : AppCompatActivity() {
                         txtIngNum.isEnabled = false
                         txtResFinal.text = "PERDISTE!!! SEGURO SOS DE RIBER"
                         txtResFinal.visibility = View.VISIBLE
-                        txtResFinal.setTextColor(
-                            txtResFinal.getContext().getResources().getColor(R.color.colorPrimary)
-                        )
-
                     }
+
                 } else {
                     this.ttoas("El nuemero debe ser MENOR A 100")
                 }
