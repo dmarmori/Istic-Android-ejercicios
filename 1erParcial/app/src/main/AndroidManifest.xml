@@ -15,7 +15,8 @@
         <activity android:name=".Contador" />
         <activity android:name=".Menu" />
         <activity android:name=".Registro" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:theme="@style/SplashTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

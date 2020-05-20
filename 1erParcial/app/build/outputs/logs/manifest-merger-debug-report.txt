@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
+ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\c718709a63172dec4cfffa1a59a58445\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core-ktx:1.2.0] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\52294a7dd2c553eda440cb1468f2ae37\jetified-core-ktx-1.2.0\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\7c9bceff856324b78a187e515962ed2c\constraintlayout-1.1.3\AndroidManifest.xml:2:1-11:12
@@ -26,25 +26,25 @@ MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\Shiftha - Dionel
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\8cafaefb2646b13f24203f0ebecadbe1\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\48038a4e63d2c8a23c5609b0529b57f5\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\da7ef1693946d2c0fb9b3f32b9c2fea4\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
-INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:3:5-38
 		INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-31:12
+		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:1-32:12
 		INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:2:11-69
 application
-ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:5:5-29:19
+ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:5:5-30:19
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\7c9bceff856324b78a187e515962ed2c\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\7c9bceff856324b78a187e515962ed2c\constraintlayout-1.1.3\AndroidManifest.xml:9:5-20
 MERGED from [androidx.core:core:1.2.0] C:\Users\Shiftha - Dionel\.gradle\caches\transforms-2\files-2.1\163ba80aa74cf2b66a97b31641e8ba82\core-1.2.0\AndroidManifest.xml:24:5-89
@@ -90,25 +90,27 @@ ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\Proyect
 	android:name
 		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:17:19-43
 activity#com.example.a1erparcial.MainActivity
-ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:18:9-24:20
+ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:18:9-25:20
+	android:theme
+		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:19:13-47
 	android:name
 		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:18:19-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:19:13-23:29
+ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:20:13-24:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:20:17-69
+ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:21:17-69
 	android:name
-		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:20:25-66
+		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:21:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:22:17-77
+ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:23:17-77
 	android:name
-		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:22:27-74
+		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:23:27-74
 meta-data#preloaded_fonts
-ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:26:9-28:57
+ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:27:9-29:57
 	android:resource
-		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:28:13-54
+		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:29:13-54
 	android:name
-		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:27:13-43
+		ADDED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml:28:13-43
 uses-sdk
 INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\1erParcial\app\src\main\AndroidManifest.xml
