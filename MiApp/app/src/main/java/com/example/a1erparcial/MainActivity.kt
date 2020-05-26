@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
 import android.view.Gravity
+import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlin.concurrent.thread
 
@@ -24,8 +25,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(registoIntent)
         }
 
-        btnIngresar.setOnClickListener{
+        val botonIngresar = findViewById<Button>(R.id.btnIngresar) //Declaracion para boton ingresar
+        botonIngresar.setOnClickListener{//Boton ingresar
+            val usrlogin = txtUsuarioLogin.text
             val menuIntent = Intent(this, Menu::class.java)
+            menuIntent.putExtra("usuarioLogueado","$usrlogin")
             startActivity(menuIntent)
         }
     }
