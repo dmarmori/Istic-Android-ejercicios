@@ -3,14 +3,24 @@ package com.example.a1erparcial
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_contador.*
+import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class Contador : AppCompatActivity() {
 
     var contador:Int=0
+
+    fun ttoas(mensaje:String){//Funcion para mensaje toast
+
+        var toast = Toast.makeText(this@Contador,"$mensaje", Toast.LENGTH_SHORT)
+        toast.setGravity(Gravity.CENTER,0,0)
+        toast.show()
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -42,8 +52,16 @@ class Contador : AppCompatActivity() {
 
         val botonDatosCont = findViewById<ImageView>(R.id.imgGuardarCont) //Declaracion para boton ingresar
         botonDatosCont.setOnClickListener {
-            val guardarDatosIntent= Intent(this, DatosContador::class.java)
-            startActivity(guardarDatosIntent)
+            //val num = lblContador.text.toString()
+            if (lblContador.text == "" || lblContador.text.toString().toInt() == 0)
+            {
+                this.ttoas("Contador Vacio ó igual a 0")
+            }else {
+                val datoContado = lblContador.text
+                val guardarDatosIntent = Intent(this, DatosContador::class.java)
+                guardarDatosIntent.putExtra("datoContado", "$datoContado")
+                startActivity(guardarDatosIntent)
+            }
         }
 
     }
