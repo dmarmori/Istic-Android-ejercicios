@@ -11,7 +11,7 @@
 9-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml
 10
 11    <application
-11-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:5:5-30:19
+11-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:5:5-32:19
 12        android:allowBackup="true"
 12-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:6:9-35
 13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
@@ -26,50 +26,54 @@
 18-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:9:9-54
 19        android:supportsRtl="true"
 19-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:10:9-35
-20        android:theme="@style/AppTheme" >
-20-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:11:9-40
-21        <activity android:name="com.example.a1erparcial.ComoJugarContador" />
-21-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:12:9-64
-21-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:12:19-52
-22        <activity android:name="com.example.a1erparcial.ComoJugarNumSecret" />
-22-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:13:9-56
-22-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:13:19-53
-23        <activity android:name="com.example.a1erparcial.NumeroSecreto" />
-23-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:14:9-51
-23-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:14:19-48
-24        <activity android:name="com.example.a1erparcial.Contador" />
-24-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:15:9-46
-24-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:15:19-43
-25        <activity android:name="com.example.a1erparcial.Menu" />
-25-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:16:9-42
-25-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:16:19-39
-26        <activity android:name="com.example.a1erparcial.Registro" />
-26-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:17:9-46
-26-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:17:19-43
-27        <activity
-27-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:18:9-25:20
-28            android:name="com.example.a1erparcial.MainActivity"
-28-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:18:19-47
-29            android:theme="@style/SplashTheme" >
-29-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:19:13-47
-30            <intent-filter>
-30-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:20:13-24:29
-31                <action android:name="android.intent.action.MAIN" />
-31-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:21:17-69
-31-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:21:25-66
-32
-33                <category android:name="android.intent.category.LAUNCHER" />
-33-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:23:17-77
-33-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:23:27-74
-34            </intent-filter>
-35        </activity>
-36
-37        <meta-data
-37-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:27:9-29:57
-38            android:name="preloaded_fonts"
-38-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:28:13-43
-39            android:resource="@array/preloaded_fonts" />
-39-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:29:13-54
-40    </application>
-41
-42</manifest>
+20        android:testOnly="true"
+21        android:theme="@style/AppTheme" >
+21-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:11:9-40
+22        <activity android:name="com.example.a1erparcial.DatosContador" />
+22-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:12:9-60
+22-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:12:19-48
+23        <activity android:name="com.example.a1erparcial.ComoJugarContador" />
+23-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:13:9-55
+23-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:13:19-52
+24        <activity android:name="com.example.a1erparcial.ComoJugarNumSecret" />
+24-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:14:9-56
+24-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:14:19-53
+25        <activity android:name="com.example.a1erparcial.NumeroSecreto" />
+25-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:15:9-51
+25-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:15:19-48
+26        <activity android:name="com.example.a1erparcial.Contador" />
+26-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:16:9-46
+26-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:16:19-43
+27        <activity android:name="com.example.a1erparcial.Menu" />
+27-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:17:9-42
+27-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:17:19-39
+28        <activity android:name="com.example.a1erparcial.Registro" />
+28-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:18:9-46
+28-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:18:19-43
+29        <activity
+29-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:19:9-27:20
+30            android:name="com.example.a1erparcial.MainActivity"
+30-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:20:13-41
+31            android:theme="@style/SplashTheme" >
+31-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:21:13-47
+32            <intent-filter>
+32-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:22:13-26:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:23:17-69
+33-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:23:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:25:17-77
+35-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:25:27-74
+36            </intent-filter>
+37        </activity>
+38
+39        <meta-data
+39-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:29:9-31:57
+40            android:name="preloaded_fonts"
+40-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:30:13-43
+41            android:resource="@array/preloaded_fonts" />
+41-->C:\Users\Shiftha - Dionel\Documents\Otros\Dionel\F\2\1erC\PP2\ProyectosAndroid\Istic-Android-ejercicios\MiApp\app\src\main\AndroidManifest.xml:31:13-54
+42    </application>
+43
+44</manifest>

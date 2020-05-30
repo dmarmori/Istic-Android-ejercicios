@@ -144,6 +144,10 @@
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
     },
     {
+        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_datos_contador.xml.flat",
+        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\layout\\activity_datos_contador.xml"
+    },
+    {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap_mysplash.png.flat",
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\mipmap\\mysplash.png"
     }
