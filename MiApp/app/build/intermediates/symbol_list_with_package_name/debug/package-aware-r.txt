@@ -758,6 +758,7 @@ id bottom
 id btnAdivinar
 id btnAyuda
 id btnContador
+id btnEliminar
 id btnGuardarDatoCont
 id btnIngresar
 id btnIrAContar

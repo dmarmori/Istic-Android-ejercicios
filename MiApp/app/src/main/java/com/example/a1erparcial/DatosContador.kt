@@ -30,6 +30,7 @@ class DatosContador : AppCompatActivity() {
         val txtObservacion=findViewById<TextView>(R.id.txtObservacion)
 
         val guardarDato = findViewById<Button>(R.id.btnGuardarDatoCont) //Declaracion para boton ingresar
+        val eliminarListado = findViewById<Button>(R.id.btnEliminar)
 
         val datoContado=intent.getStringExtra("datoContado");
         lblDatoContado.text = datoContado
@@ -48,7 +49,22 @@ class DatosContador : AppCompatActivity() {
             CargarListadoContador()
         }
 
+        eliminarListado.setOnClickListener {
+            try {
+                EliminarListado()
+            }catch (e: IOException) {
+                this.ttoas("Error al eliminar listado")
+            }
+            this.ttoas("Eliminando...")
+            CargarListadoContador()
+        }
 
+
+    }
+
+    private fun EliminarListado()
+    {
+        deleteFile("datosContador.txt")
     }
 
     private fun CargarListadoContador()
@@ -73,7 +89,7 @@ class DatosContador : AppCompatActivity() {
 
     }
 
-    override fun onStart() {
+    override fun onStart() {//Para cargar los datos cuando inicia la pantalla
         super.onStart()
         CargarListadoContador()
     }
