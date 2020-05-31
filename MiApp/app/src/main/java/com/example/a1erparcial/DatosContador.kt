@@ -1,6 +1,7 @@
 package com.example.a1erparcial
 
 import android.app.Activity
+import android.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
@@ -47,16 +48,34 @@ class DatosContador : AppCompatActivity() {
            }
             this.ttoas("Guardando...")
             CargarListadoContador()
+            guardarDato.isEnabled = false
         }
 
         eliminarListado.setOnClickListener {
             try {
+                val btnBorrarDialogBuilder = AlertDialog.Builder(this@DatosContador) //Dialogo para eliminar listado
+                btnBorrarDialogBuilder.setTitle("Eliminar")
+                btnBorrarDialogBuilder.setIcon(R.mipmap.ic_launcher)
+                btnBorrarDialogBuilder.setMessage("¿Esta seguro de eliminar el archivo del listado?")
+                btnBorrarDialogBuilder.setCancelable(false)
+                btnBorrarDialogBuilder.setPositiveButton("Si") {_,_->
+                    this.ttoas("Eliminando...")
+                    CargarListadoContador()
+                    finish()
+                }
+                btnBorrarDialogBuilder.setNegativeButton("No") { _, _ ->
+                    Toast.makeText(this, "Indico No...",Toast.LENGTH_SHORT).show()
+                }
+                btnBorrarDialogBuilder.setNeutralButton("Cancel") { _, _ ->
+                    Toast.makeText(this, "Accion Cancelada..",Toast.LENGTH_SHORT).show()
+                }
+                val btnBorrarDialog = btnBorrarDialogBuilder.create()
+                btnBorrarDialog.show()
+
                 EliminarListado()
             }catch (e: IOException) {
                 this.ttoas("Error al eliminar listado")
             }
-            this.ttoas("Eliminando...")
-            CargarListadoContador()
         }
 
 
