@@ -95,7 +95,7 @@ class DatosContador : AppCompatActivity() {
                 var linea = br.readLine()
                 val listado = StringBuilder()//solo para mostrarlo
                 while (linea != null) {
-                    listado.append(linea + " \n ")
+                    listado.append(linea + "\n")
                     linea = br.readLine()
                 }
                 br.close()
