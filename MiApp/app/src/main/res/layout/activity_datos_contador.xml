@@ -9,10 +9,10 @@
     tools:context=".DatosContador">
 
     <TextView
-        android:id="@+id/lblDatoContado"
+        android:id="@+id/lblDatoCont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="36dp"
         android:textColor="@android:color/background_light"
         android:textSize="50sp"
         android:textStyle="bold"
@@ -31,13 +31,12 @@
         android:textColor="@android:color/background_light"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblDatoContado"
+        app:layout_constraintTop_toBottomOf="@+id/lblDatoCont"
         tools:text="Observacvion" />
 
     <EditText
-        android:id="@+id/txtMultilineContador"
+        android:id="@+id/txtMultilineCont"
         android:layout_width="381dp"
         android:layout_height="385dp"
         android:backgroundTint="@android:color/background_light"
@@ -50,32 +49,30 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnGuardarDatoCont"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.979" />
 
     <Button
         android:id="@+id/btnGuardarDatoCont"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="60dp"
         android:background="@android:color/holo_red_dark"
         android:text="Guardar"
         android:textColor="#FFFFFF"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtObservacion" />
+        app:layout_constraintTop_toBottomOf="@+id/txtObservacion"
+        tools:layout_editor_absoluteX="63dp" />
 
     <Button
-        android:id="@+id/btnEliminar"
+        android:id="@+id/btnEliminarCont"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="52dp"
+        android:layout_marginTop="60dp"
         android:background="@android:color/holo_red_dark"
         android:text="Eliminar"
         android:textColor="@android:color/background_light"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtObservacion" />
+        app:layout_constraintTop_toBottomOf="@+id/txtObservacion"
+        tools:layout_editor_absoluteX="230dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

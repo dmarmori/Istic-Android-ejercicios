@@ -758,8 +758,10 @@ id bottom
 id btnAdivinar
 id btnAyuda
 id btnContador
-id btnEliminar
+id btnEliminarCont
+id btnGuardarDatoAdivina
 id btnGuardarDatoCont
+id btnGuardarDatosContador
 id btnIngresar
 id btnIrAContar
 id btnMeRindo
@@ -811,14 +813,14 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
-id imgGuardarCont
 id info
 id invisible
 id italic
 id lblComoJugar
 id lblComoJugar2
 id lblContador
-id lblDatoContado
+id lblDatoAdivina
+id lblDatoCont
 id lblLegajo
 id lblayuda
 id left
@@ -905,7 +907,8 @@ id txtClaveLogin
 id txtIngNum
 id txtIntentos
 id txtMailUsuario
-id txtMultilineContador
+id txtMultilineCont
+id txtNombreAdivina
 id txtObservacion
 id txtRegistroClave
 id txtRegistroLogin
@@ -964,6 +967,7 @@ layout abc_tooltip
 layout activity_como_jugar_contador
 layout activity_como_jugar_num_secret
 layout activity_contador
+layout activity_datos_adivina
 layout activity_datos_contador
 layout activity_main
 layout activity_menu
@@ -984,7 +988,6 @@ mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
 mipmap mysplash
-mipmap mysplash_
 string abc_action_bar_home_description
 string abc_action_bar_up_description
 string abc_action_menu_overflow_description

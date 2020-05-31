@@ -8,7 +8,6 @@ import android.view.Gravity
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
-import kotlinx.android.synthetic.main.activity_contador.*
 import kotlinx.android.synthetic.main.activity_datos_contador.*
 import java.io.BufferedReader
 import java.io.IOException
@@ -30,17 +29,17 @@ class DatosContador : AppCompatActivity() {
 
         val txtObservacion=findViewById<TextView>(R.id.txtObservacion)
 
-        val guardarDato = findViewById<Button>(R.id.btnGuardarDatoCont) //Declaracion para boton ingresar
-        val eliminarListado = findViewById<Button>(R.id.btnEliminar)
+        val guardarDatoCont = findViewById<Button>(R.id.btnGuardarDatoCont) //Declaracion para boton ingresar
+        val eliminarListadoCont = findViewById<Button>(R.id.btnEliminarCont)
 
         val datoContado=intent.getStringExtra("datoContado");
-        lblDatoContado.text = datoContado
+        lblDatoCont.text = datoContado
 
 
-        guardarDato.setOnClickListener {
+        guardarDatoCont.setOnClickListener {
            try {
                val archivoContador = OutputStreamWriter(openFileOutput("datosContador.txt", Activity.MODE_APPEND))
-               archivoContador.write(txtObservacion.text.toString() + ": " + lblDatoContado.text.toString() + "\n")
+               archivoContador.write(txtObservacion.text.toString() + ": " + lblDatoCont.text.toString() + "\n")
                archivoContador.flush()
                archivoContador.close()
            }catch (e: IOException) {
@@ -48,10 +47,10 @@ class DatosContador : AppCompatActivity() {
            }
             this.ttoas("Guardando...")
             CargarListadoContador()
-            guardarDato.isEnabled = false
+            guardarDatoCont.isEnabled = false
         }
 
-        eliminarListado.setOnClickListener {
+        eliminarListadoCont.setOnClickListener {
             try {
                 val btnBorrarDialogBuilder = AlertDialog.Builder(this@DatosContador) //Dialogo para eliminar listado
                 btnBorrarDialogBuilder.setTitle("Eliminar")
@@ -100,7 +99,7 @@ class DatosContador : AppCompatActivity() {
                 }
                 br.close()
                 archivoContador.close()
-                this.txtMultilineContador.setText(listado)
+                this.txtMultilineCont.setText(listado)
             } catch (e: IOException) {
                 this.ttoas("Error al cargar los datos")
             }

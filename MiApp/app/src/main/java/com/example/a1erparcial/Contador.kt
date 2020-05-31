@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_contador.*
-import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class Contador : AppCompatActivity() {
 
@@ -38,8 +37,8 @@ class Contador : AppCompatActivity() {
             lblContador.text = contador.toString()
         }
 
-        val botonContar = findViewById<Button>(R.id.btnReserContador) //Declaracion para boton ingresar
-        botonContar.setOnClickListener {
+        val botonReset = findViewById<Button>(R.id.btnReserContador) //Declaracion para boton ingresar
+        botonReset.setOnClickListener {
             contador = 0
             lblContador.text = ""
         }
@@ -50,17 +49,16 @@ class Contador : AppCompatActivity() {
             startActivity(ayudaIntent)
         }
 
-        val botonDatosCont = findViewById<ImageView>(R.id.imgGuardarCont) //Declaracion para boton ingresar
+        val botonDatosCont = findViewById<ImageView>(R.id.btnGuardarDatosContador) //Declaracion para boton ingresar
         botonDatosCont.setOnClickListener {
-            //val num = lblContador.text.toString()
             if (lblContador.text == "" || lblContador.text.toString().toInt() == 0)
             {
                 this.ttoas("Contador Vacio ó igual a 0")
             }else {
                 val datoContado = lblContador.text
-                val guardarDatosIntent = Intent(this, DatosContador::class.java)
-                guardarDatosIntent.putExtra("datoContado", "$datoContado")
-                startActivity(guardarDatosIntent)
+                val guardarDatosContIntent = Intent(this, DatosContador::class.java)
+                guardarDatosContIntent.putExtra("datoContado", "$datoContado")
+                startActivity(guardarDatosContIntent)
             }
         }
 

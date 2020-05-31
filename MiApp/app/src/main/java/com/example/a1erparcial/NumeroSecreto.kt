@@ -6,13 +6,13 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import android.view.Gravity
-import android.widget.Button
-import kotlinx.android.synthetic.main.activity_main.*
+import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_numero_secreto.*
+import java.io.IOException
 
 class NumeroSecreto : AppCompatActivity() {
 
-    val numeroSecreto=(Math.random() * 100).toInt()
+    val numeroSecreto=(Math.random() * 1).toInt()
 
     val validaNum = 100
 
@@ -50,6 +50,9 @@ class NumeroSecreto : AppCompatActivity() {
         txtVidas.text = "Vidas restantes: $vidas"
         txtIntentos.text = "Numero de intentos: $intentos"
         txtAyuda.text = "Ayudas disponibles: $numAyuda"
+
+        val botonDatosAdivina = findViewById<ImageView>(R.id.btnGuardarDatosContador) //Declaracion para boton ingresar
+        botonDatosAdivina.isEnabled = false //Declaro el boton guardar arriba y lo inicio deshabilitado
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -131,9 +134,11 @@ class NumeroSecreto : AppCompatActivity() {
                             if (ayuda < 3) {
                                 this.ttoas("Ganaste Crack ")
                                 txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
+                                botonDatosAdivina.isEnabled = true
                             } else {
                                 this.ttoas("Ganaste con ayudin")
                                 txtResFinal.text = "GANASTE CON AYUDIN COMO RIBER"
+                                botonDatosAdivina.isEnabled = true
                             }
                             vidas = vidas - 1
                             intentos = intentos + 1
@@ -178,6 +183,20 @@ class NumeroSecreto : AppCompatActivity() {
         lblComoJugar.setOnClickListener{
             val ComoJugartIntent = Intent(this, ComoJugarNumSecret::class.java)
             startActivity(ComoJugartIntent)
+        }
+
+
+        botonDatosAdivina.setOnClickListener {
+            try {
+                val datosAdivina = txtIngNum.text
+                val guardarDatosIntent = Intent(this, DatosAdivina::class.java)
+                guardarDatosIntent.putExtra("datosAdivina", "$datosAdivina")
+                startActivity(guardarDatosIntent)
+
+            } catch (e: IOException) {
+                this.ttoas("Error intente nuevamente")
+            }
+
         }
 
 
