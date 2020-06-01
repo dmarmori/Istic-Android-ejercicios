@@ -62,5 +62,11 @@ class Contador : AppCompatActivity() {
             }
         }
 
+        val botonIrMenu = findViewById<ImageView>(R.id.imgMenu) //Declaracion para boton ingresar
+        botonIrMenu.setOnClickListener {
+            val irMenuIntent = Intent(this, Menu::class.java)
+            startActivity(irMenuIntent)
+            finish()
+        }
     }
 }

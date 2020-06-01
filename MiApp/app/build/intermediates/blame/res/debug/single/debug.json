@@ -92,12 +92,12 @@
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\layout\\activity_menu.xml"
     },
     {
-        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login.png.flat",
-        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\drawable\\login.png"
-    },
-    {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_datos_adivina.xml.flat",
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\layout\\activity_datos_adivina.xml"
+    },
+    {
+        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login.png.flat",
+        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\drawable\\login.png"
     },
     {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",

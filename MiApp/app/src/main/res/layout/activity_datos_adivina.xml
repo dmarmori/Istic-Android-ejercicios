@@ -8,36 +8,26 @@
     android:padding="10dp"
     tools:context=".DatosAdivina">
 
-    <TextView
-        android:id="@+id/lblDatoCont"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:textColor="@android:color/background_light"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <EditText
-        android:id="@+id/txtObservacion"
+        android:id="@+id/txtNombreAdivina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="@android:color/background_light"
         android:ems="10"
+        android:hint="Ingrese su Nombre"
         android:inputType="textPersonName"
-        android:text="Ingrese du nombre"
         android:textColor="@android:color/background_light"
+        android:textColorHint="@android:color/background_light"
         android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.528"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lblDatoAdivina" />
 
     <EditText
-        android:id="@+id/txtMultilineCont"
+        android:id="@+id/txtMultilineAdivina"
         android:layout_width="381dp"
         android:layout_height="385dp"
         android:backgroundTint="@android:color/background_light"
@@ -50,17 +40,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnGuardarDatoAdivina"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardarDatoAdivina" />
 
     <Button
-        android:id="@+id/btnGuardarDatoCont"
+        android:id="@+id/btnGuardarDatoAdivina"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="16dp"
         android:background="@android:color/holo_red_dark"
         android:text="Guardar"
         android:textColor="#FFFFFF"
@@ -68,10 +57,10 @@
         app:layout_constraintTop_toBottomOf="@+id/txtNombreAdivina" />
 
     <Button
-        android:id="@+id/btnEliminarCont"
+        android:id="@+id/btnEliminarAdivina"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="52dp"
         android:background="@android:color/holo_red_dark"
         android:text="Eliminar"
@@ -79,4 +68,31 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtNombreAdivina" />
 
+    <TextView
+        android:id="@+id/lblDatoAdivina"
+        android:layout_width="116dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="44dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgSalirAdivina"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:tint="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" /><![CDATA[
+
+    />
+
+]]>
 </androidx.constraintlayout.widget.ConstraintLayout>

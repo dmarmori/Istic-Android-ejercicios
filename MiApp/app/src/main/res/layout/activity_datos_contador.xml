@@ -12,11 +12,12 @@
         android:id="@+id/lblDatoCont"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="84dp"
         android:textColor="@android:color/background_light"
         android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -24,16 +25,18 @@
         android:id="@+id/txtObservacion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="8dp"
         android:backgroundTint="@android:color/background_light"
         android:ems="10"
+        android:hint="Observaciones"
         android:inputType="textPersonName"
         android:textColor="@android:color/background_light"
+        android:textColorHint="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.472"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblDatoCont"
-        tools:text="Observacvion" />
+        app:layout_constraintTop_toBottomOf="@+id/lblDatoCont" />
 
     <EditText
         android:id="@+id/txtMultilineCont"
@@ -58,21 +61,33 @@
         android:id="@+id/btnGuardarDatoCont"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="44dp"
         android:background="@android:color/holo_red_dark"
         android:text="Guardar"
         android:textColor="#FFFFFF"
-        app:layout_constraintTop_toBottomOf="@+id/txtObservacion"
-        tools:layout_editor_absoluteX="63dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtObservacion" />
 
     <Button
         android:id="@+id/btnEliminarCont"
         android:layout_width="100dp"
         android:layout_height="60dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="56dp"
         android:background="@android:color/holo_red_dark"
         android:text="Eliminar"
         android:textColor="@android:color/background_light"
-        app:layout_constraintTop_toBottomOf="@+id/txtObservacion"
-        tools:layout_editor_absoluteX="230dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtObservacion" />
+
+    <ImageView
+        android:id="@+id/imgSalirCont"
+        android:layout_width="60dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="32dp"
+        android:tint="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/btn_dialog" />
 </androidx.constraintlayout.widget.ConstraintLayout>

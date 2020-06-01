@@ -6,13 +6,14 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Toast
 import android.view.Gravity
+import android.widget.Button
 import android.widget.ImageView
 import kotlinx.android.synthetic.main.activity_numero_secreto.*
 import java.io.IOException
 
 class NumeroSecreto : AppCompatActivity() {
 
-    val numeroSecreto=(Math.random() * 1).toInt()
+    val numeroSecreto=1//(Math.random() * 100).toInt()
 
     val validaNum = 100
 
@@ -51,7 +52,7 @@ class NumeroSecreto : AppCompatActivity() {
         txtIntentos.text = "Numero de intentos: $intentos"
         txtAyuda.text = "Ayudas disponibles: $numAyuda"
 
-        val botonDatosAdivina = findViewById<ImageView>(R.id.btnGuardarDatosContador) //Declaracion para boton ingresar
+        val botonDatosAdivina = findViewById<ImageView>(R.id.btnGuardarDatosAdivina) //Declaracion para boton ingresar
         botonDatosAdivina.isEnabled = false //Declaro el boton guardar arriba y lo inicio deshabilitado
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////
@@ -188,10 +189,10 @@ class NumeroSecreto : AppCompatActivity() {
 
         botonDatosAdivina.setOnClickListener {
             try {
-                val datosAdivina = txtIngNum.text
-                val guardarDatosIntent = Intent(this, DatosAdivina::class.java)
-                guardarDatosIntent.putExtra("datosAdivina", "$datosAdivina")
-                startActivity(guardarDatosIntent)
+                val datosAdivina = intentos.toString()
+                val guardarDatosAdivinaIntent = Intent(this, DatosAdivina::class.java)
+                guardarDatosAdivinaIntent.putExtra("datosAdivina", "$datosAdivina")
+                startActivity(guardarDatosAdivinaIntent)
 
             } catch (e: IOException) {
                 this.ttoas("Error intente nuevamente")
@@ -199,6 +200,24 @@ class NumeroSecreto : AppCompatActivity() {
 
         }
 
+        val botonIrMenu = findViewById<ImageView>(R.id.imgMenu) //Declaracion para boton ingresar
+        botonIrMenu.setOnClickListener {
+            val irMenuIntent = Intent(this, Menu::class.java)
+            startActivity(irMenuIntent)
+            finish()
+        }
+
+        val jugarDeNuevo = findViewById<Button>(R.id.btnJuegoNuevo) //Declaracion para boton ingresar
+        jugarDeNuevo.setOnClickListener {
+
+            val pIntent = Intent(this, NumeroSecreto::class.java)
+            startActivity(pIntent)
+
+        }
+
 
     }
+
+
+
 }

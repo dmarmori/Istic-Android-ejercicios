@@ -2,10 +2,12 @@ package com.example.a1erparcial
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_datos_contador.*
@@ -31,61 +33,72 @@ class DatosContador : AppCompatActivity() {
 
         val guardarDatoCont = findViewById<Button>(R.id.btnGuardarDatoCont) //Declaracion para boton ingresar
         val eliminarListadoCont = findViewById<Button>(R.id.btnEliminarCont)
+        val SalirDatosCont = findViewById<ImageView>(R.id.imgSalirCont)
 
         val datoContado=intent.getStringExtra("datoContado");
         lblDatoCont.text = datoContado
 
 
         guardarDatoCont.setOnClickListener {
-           try {
-               val archivoContador = OutputStreamWriter(openFileOutput("datosContador.txt", Activity.MODE_APPEND))
-               archivoContador.write(txtObservacion.text.toString() + ": " + lblDatoCont.text.toString() + "\n")
-               archivoContador.flush()
-               archivoContador.close()
-           }catch (e: IOException) {
-               this.ttoas("Error al guardar datos")
-           }
-            this.ttoas("Guardando...")
-            CargarListadoContador()
+            fguardarDatosCont()
             guardarDatoCont.isEnabled = false
         }
 
         eliminarListadoCont.setOnClickListener {
-            try {
-                val btnBorrarDialogBuilder = AlertDialog.Builder(this@DatosContador) //Dialogo para eliminar listado
-                btnBorrarDialogBuilder.setTitle("Eliminar")
-                btnBorrarDialogBuilder.setIcon(R.mipmap.ic_launcher)
-                btnBorrarDialogBuilder.setMessage("¿Esta seguro de eliminar el archivo del listado?")
-                btnBorrarDialogBuilder.setCancelable(false)
-                btnBorrarDialogBuilder.setPositiveButton("Si") {_,_->
-                    this.ttoas("Eliminando...")
-                    CargarListadoContador()
-                    finish()
-                }
-                btnBorrarDialogBuilder.setNegativeButton("No") { _, _ ->
-                    Toast.makeText(this, "Indico No...",Toast.LENGTH_SHORT).show()
-                }
-                btnBorrarDialogBuilder.setNeutralButton("Cancel") { _, _ ->
-                    Toast.makeText(this, "Accion Cancelada..",Toast.LENGTH_SHORT).show()
-                }
-                val btnBorrarDialog = btnBorrarDialogBuilder.create()
-                btnBorrarDialog.show()
-
-                EliminarListado()
-            }catch (e: IOException) {
-                this.ttoas("Error al eliminar listado")
-            }
+           fEliminarListado()
+           fCargarListadoContador()
         }
 
-
+        SalirDatosCont.setOnClickListener {
+            val irContIntent = Intent(this, Contador::class.java)
+            startActivity(irContIntent)
+            finish()
+        }
     }
-
-    private fun EliminarListado()
+////////////////////////////////////////////////////////////////////////////Funiones Privadas
+    private fun fguardarDatosCont()
     {
-        deleteFile("datosContador.txt")
+        try {
+            val archivoContador = OutputStreamWriter(openFileOutput("datosContador.txt", Activity.MODE_APPEND))
+            archivoContador.write(txtObservacion.text.toString() + ": " + lblDatoCont.text.toString() + "\n")
+            archivoContador.flush()
+            archivoContador.close()
+        }catch (e: IOException) {
+            this.ttoas("Error al guardar datos")
+        }
+        this.ttoas("Guardando...")
+        fCargarListadoContador()
     }
+///////////////////////////////////////////////////////////////////////////////////////
+    private fun fEliminarListado()
+    {
+        try {
+            val btnBorrarDialogBuilder = AlertDialog.Builder(this@DatosContador) //Dialogo para eliminar listado
+            btnBorrarDialogBuilder.setTitle("Eliminar")
+            btnBorrarDialogBuilder.setIcon(R.mipmap.ic_launcher)
+            btnBorrarDialogBuilder.setMessage("¿Esta seguro de eliminar el archivo del listado?")
+            btnBorrarDialogBuilder.setCancelable(false)
+            btnBorrarDialogBuilder.setPositiveButton("Si") {_,_->
+                this.ttoas("Eliminando...")
+                fCargarListadoContador()
+                deleteFile("datosContador.txt")
+                finish()
+            }
+            btnBorrarDialogBuilder.setNegativeButton("No") { _, _ ->
+                Toast.makeText(this, "Indico No...",Toast.LENGTH_SHORT).show()
+            }
+            btnBorrarDialogBuilder.setNeutralButton("Cancel") { _, _ ->
+                Toast.makeText(this, "Accion Cancelada..",Toast.LENGTH_SHORT).show()
+            }
+            val btnBorrarDialog = btnBorrarDialogBuilder.create()
+            btnBorrarDialog.show()
 
-    private fun CargarListadoContador()
+        }catch (e: IOException) {
+            this.ttoas("Error al eliminar listado")
+        }
+    }
+///////////////////////////////////////////////////////////////////////////////
+    private fun fCargarListadoContador()
     {
         if (fileList().contains("datosContador.txt")) {
             try {
@@ -109,7 +122,7 @@ class DatosContador : AppCompatActivity() {
 
     override fun onStart() {//Para cargar los datos cuando inicia la pantalla
         super.onStart()
-        CargarListadoContador()
+        fCargarListadoContador()
     }
 
 }

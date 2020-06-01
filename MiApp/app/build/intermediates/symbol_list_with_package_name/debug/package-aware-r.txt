@@ -758,12 +758,15 @@ id bottom
 id btnAdivinar
 id btnAyuda
 id btnContador
+id btnEliminarAdivina
 id btnEliminarCont
 id btnGuardarDatoAdivina
 id btnGuardarDatoCont
+id btnGuardarDatosAdivina
 id btnGuardarDatosContador
 id btnIngresar
 id btnIrAContar
+id btnJuegoNuevo
 id btnMeRindo
 id btnNumSec
 id btnRegistrarme
@@ -813,6 +816,9 @@ id imageView3
 id imageView4
 id imageView5
 id imageView6
+id imgMenu
+id imgSalirAdivina
+id imgSalirCont
 id info
 id invisible
 id italic
@@ -907,6 +913,7 @@ id txtClaveLogin
 id txtIngNum
 id txtIntentos
 id txtMailUsuario
+id txtMultilineAdivina
 id txtMultilineCont
 id txtNombreAdivina
 id txtObservacion

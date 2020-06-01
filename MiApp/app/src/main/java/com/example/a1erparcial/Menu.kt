@@ -14,9 +14,16 @@ class Menu : AppCompatActivity() {
         setContentView(R.layout.activity_menu)
 
         val usrlogin=intent.getStringExtra("usuarioLogueado");
-        val toast = Toast.makeText(this@Menu,"Bienvenido $usrlogin", Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
+        if(usrlogin == null)//Valido si el dato viene null
+        {
+            val toast = Toast.makeText(this@Menu, "Bienvenido", Toast.LENGTH_SHORT)
+            toast.setGravity(Gravity.CENTER, 0, 0)
+            toast.show()
+        }else {
+            val toast = Toast.makeText(this@Menu, "Bienvenido $usrlogin", Toast.LENGTH_SHORT)
+            toast.setGravity(Gravity.CENTER, 0, 0)
+            toast.show()
+        }
 
         btnContador.setOnClickListener {
             val ContadorIntent = Intent(this, Contador::class.java)
