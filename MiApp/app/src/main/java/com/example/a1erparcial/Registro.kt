@@ -41,8 +41,7 @@ class Registro : AppCompatActivity() {
             {
                 this.ttoas("Todos los campos son obligatorios")
             }else {
-                val archivoRegistro =
-                    OutputStreamWriter(openFileOutput("registro.txt", Activity.MODE_APPEND))
+                val archivoRegistro = OutputStreamWriter(openFileOutput("registro.txt", Activity.MODE_APPEND))
                 archivoRegistro.write(
                     txtRegistroUsuario.text.toString() + "=>" + txtMailUsuario.text.toString() + "=>" +
                             txtRegistroClave.text.toString() + "=>" + txtRegistroRepClave.text.toString() + "\n"
