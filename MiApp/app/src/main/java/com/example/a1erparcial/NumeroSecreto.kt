@@ -13,7 +13,7 @@ import java.io.IOException
 
 class NumeroSecreto : AppCompatActivity() {
 
-    val numeroSecreto=1//(Math.random() * 100).toInt()
+    val numeroSecreto=(Math.random() * 100).toInt()
 
     val validaNum = 100
 
