@@ -209,9 +209,9 @@ class NumeroSecreto : AppCompatActivity() {
 
         val jugarDeNuevo = findViewById<Button>(R.id.btnJuegoNuevo) //Declaracion para boton ingresar
         jugarDeNuevo.setOnClickListener {
-
             val pIntent = Intent(this, NumeroSecreto::class.java)
             startActivity(pIntent)
+            finish()
 
         }
 
