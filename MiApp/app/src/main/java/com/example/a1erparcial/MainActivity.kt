@@ -7,6 +7,7 @@ import android.widget.Toast
 import android.view.Gravity
 import android.widget.Button
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_registro.*
 import java.io.BufferedReader
 import java.io.IOException
 import java.io.InputStreamReader
@@ -44,29 +45,40 @@ class MainActivity : AppCompatActivity() {
 
     private fun loginArchivo()
     {
-        if (fileList().contains("registro.txt")) {
-            try {
-                val archivoUsuarios = InputStreamReader(openFileInput("registro.txt"))
-                val br = BufferedReader(archivoUsuarios)
-                var linea = br.readLine()
-                while (linea != null) {
-                 //pepito=>1234 esto tiene linea
-                    val arrayDatos=linea.split("=>")
-                    if(arrayDatos[0]==txtUsuarioLogin.text.toString() && arrayDatos[1]==txtClaveLogin.text.toString())
-                    {
-                        break
-                    }
-                    linea = br.readLine()
-                }
-                br.close()
-                archivoUsuarios.close()
-                val usrlogin = txtUsuarioLogin.text
-                val menuIntent = Intent(this, Menu::class.java)
-                menuIntent.putExtra("usuarioLogueado","$usrlogin")
-                startActivity(menuIntent)
+        if (txtUsuarioLogin.text.toString() == "" || txtClaveLogin.text.toString() == "")
+        {
+            this.ttoas("Ingrese usuario y clave")
+        }else {
+            if (fileList().contains("registro.txt")) {
+                try {
+                    var existeUsuario : Boolean = false
 
-            } catch (e: IOException) {
-                this.ttoas("Error al ingresar")
+                    val archivoUsuarios = InputStreamReader(openFileInput("registro.txt"))
+                    val br = BufferedReader(archivoUsuarios)
+                    var linea = br.readLine()
+                    while (linea != null) {
+                        val arrayDatos = linea.split("=>")
+                        if (arrayDatos[0] == txtUsuarioLogin.text.toString() && arrayDatos[1] == txtClaveLogin.text.toString()) {
+                            existeUsuario = true
+                            val usrlogin = txtUsuarioLogin.text
+                            val menuIntent = Intent(this, Menu::class.java)
+                            menuIntent.putExtra("usuarioLogueado", "$usrlogin")
+                            startActivity(menuIntent)
+                            break
+                        }
+                        linea = br.readLine()
+
+                    }
+                    if (existeUsuario == false)
+                    {
+                       this.ttoas("Usuario inexistente")
+                    }
+                    br.close()
+                    archivoUsuarios.close()
+
+                } catch (e: IOException) {
+                    this.ttoas("Error al ingresar")
+                }
             }
         }
 

@@ -1,4 +1,4 @@
-#Tue Jun 02 23:53:19 ART 2020
+#Wed Jun 03 21:59:10 ART 2020
 base.0=C\:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\ProyectosAndroid\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
 path.1=classes.dex
 renamed.1=classes2.dex
