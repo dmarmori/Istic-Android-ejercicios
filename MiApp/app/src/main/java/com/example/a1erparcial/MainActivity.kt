@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
                     var linea = br.readLine()
                     while (linea != null) {
                         val arrayDatos = linea.split("=>")
-                        if (arrayDatos[0] == txtUsuarioLogin.text.toString() && arrayDatos[1] == txtClaveLogin.text.toString()) {
+                        if (arrayDatos[0] == txtUsuarioLogin.text.toString() && arrayDatos[2] == txtClaveLogin.text.toString()) {
                             existeUsuario = true
                             val usrlogin = txtUsuarioLogin.text
                             val menuIntent = Intent(this, Menu::class.java)
