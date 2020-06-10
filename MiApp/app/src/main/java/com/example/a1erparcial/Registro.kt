@@ -52,19 +52,19 @@ class Registro : AppCompatActivity() {
                             this.ttoas("Las claves deben coincidir")
                         }else
                         {
+                            val archivoRegistro = OutputStreamWriter(openFileOutput("registro.txt", Activity.MODE_APPEND))
+                            archivoRegistro.write(
+                                txtRegistroUsuario.text.toString() + "=>" + txtMailUsuario.text.toString() + "=>" +
+                                        txtRegistroClave.text.toString() + "=>" + txtRegistroRepClave.text.toString() + "\n"
+                            )
 
+                            archivoRegistro.flush()
+                            archivoRegistro.close()
+                            this.ttoas("Registro exitoso!!!")
                         }
                     }
                 }
-            val archivoRegistro = OutputStreamWriter(openFileOutput("registro.txt", Activity.MODE_APPEND))
-            archivoRegistro.write(
-                txtRegistroUsuario.text.toString() + "=>" + txtMailUsuario.text.toString() + "=>" +
-                        txtRegistroClave.text.toString() + "=>" + txtRegistroRepClave.text.toString() + "\n"
-            )
 
-            archivoRegistro.flush()
-            archivoRegistro.close()
-            this.ttoas("Registro exitoso!!!")
 
         } catch (e: IOException) {
             this.ttoas("Error al registrar usuario")
