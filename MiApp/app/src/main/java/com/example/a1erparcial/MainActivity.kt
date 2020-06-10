@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
 
     fun ttoas(mensaje:String){//Funcion para mensaje toast
 
-        var toast = Toast.makeText(this@MainActivity,"$mensaje", Toast.LENGTH_SHORT)
+        var toast = Toast.makeText(this@MainActivity,"$mensaje",Toast.LENGTH_SHORT)
         toast.setGravity(Gravity.CENTER,0,0)
         toast.show()
     }
@@ -47,7 +47,7 @@ class MainActivity : AppCompatActivity() {
     {
         if (txtUsuarioLogin.text.toString() == "" || txtClaveLogin.text.toString() == "")
         {
-            this.ttoas("Ingrese usuario y clave")
+           claseFunciones.ttoas("Ingrese usuario y clave",this)
         }else {
             if (fileList().contains("registro.txt")) {
                 try {
