@@ -1,5 +1,6 @@
 package com.example.a1erparcial
 
+import android.app.AlertDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -9,6 +10,7 @@ import android.view.Gravity
 import android.widget.Button
 import androidx.core.text.set
 import com.google.firebase.analytics.FirebaseAnalytics
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_registro.*
 import java.io.BufferedReader
@@ -61,43 +63,54 @@ class MainActivity : AppCompatActivity() {
 
     private fun loginArchivo()
     {
-        if (txtUsuarioLogin.text.toString() == "" || txtClaveLogin.text.toString() == "")
+        if (registroVacio()==false)
         {
            claseFunciones.ttoas("Ingrese usuario y clave",this)
         }else {
-            if (fileList().contains("registro.txt")) {
                 try {
-                    var existeUsuario : Boolean = false
 
-                    val archivoUsuarios = InputStreamReader(openFileInput("registro.txt"))
-                    val br = BufferedReader(archivoUsuarios)
-                    var linea = br.readLine()
-                    while (linea != null) {
-                        val arrayDatos = linea.split("=>")
-                        if (arrayDatos[0] == txtUsuarioLogin.text.toString() && arrayDatos[2] == txtClaveLogin.text.toString()) {
-                            existeUsuario = true
+                    FirebaseAuth.getInstance().signInWithEmailAndPassword(txtUsuarioLogin.text.toString(),
+                        txtClaveLogin.text.toString()).addOnCompleteListener {
+                        if (it.isSuccessful)
+                        {
                             val usrlogin = txtUsuarioLogin.text
                             val menuIntent = Intent(this, Menu::class.java)
                             menuIntent.putExtra("usuarioLogueado", "$usrlogin")
                             startActivity(menuIntent)
-                            break
+                        }else
+                        {
+                            claseFunciones.ttoas("Usuario inexistente",this)
                         }
-                        linea = br.readLine()
-
                     }
-                    if (existeUsuario == false)
-                    {
-                        claseFunciones.ttoas("Usuario inexistente",this)
-                    }
-                    br.close()
-                    archivoUsuarios.close()
 
                 } catch (e: IOException) {
                     claseFunciones.ttoas("Error al ingresar",this)
                 }
-            }
         }
-
     }
+
+    //Funcion de alerta
+    private fun showAlert()
+    {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Error autentificando usuario")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    //funcion de registro vacio
+    private fun registroVacio(): Boolean
+    {
+        var check:Boolean = false
+        if (txtUsuarioLogin.text.isNotEmpty() && txtClaveLogin.text.isNotEmpty())
+        {
+            check = true
+        }
+        return check
+    }
+
+
 
 }

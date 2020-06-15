@@ -79,6 +79,7 @@ class Registro : AppCompatActivity() {
 
     }
 
+    //Funcion de alerta
     private fun showAlert()
     {
         val builder = AlertDialog.Builder(this)
