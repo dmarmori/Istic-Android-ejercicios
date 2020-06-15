@@ -1,11 +1,16 @@
 package com.example.a1erparcial
 
 import android.app.Activity
+import android.app.AlertDialog
 import android.os.Bundle
 import android.util.Patterns
 import android.view.Gravity
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_registro.*
 import java.io.IOException
 import java.io.OutputStreamWriter
@@ -19,15 +24,17 @@ class Registro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registro)
 
-        btnRegistrarme.setOnClickListener{
 
+        val botonRegistrar = findViewById<Button>(R.id.btnRegistrarme)
+
+        botonRegistrar.setOnClickListener{
         registrarUsuario()
-
-            //val LoginIntent = Intent(this, MainActivity::class.java)
-            //startActivity(LoginIntent)
         }
 
     }
+
+
+    //Funcion para registrar usuario
     private fun registrarUsuario()
     {
         try {
@@ -46,26 +53,39 @@ class Registro : AppCompatActivity() {
                             claseFunciones.ttoas("Las claves deben coincidir",this)
                         }else
                         {
-                            val archivoRegistro = OutputStreamWriter(openFileOutput("registro.txt", Activity.MODE_APPEND))
-                            archivoRegistro.write(
-                                txtRegistroUsuario.text.toString() + "=>" + txtMailUsuario.text.toString() + "=>" +
-                                        txtRegistroClave.text.toString() + "=>" + txtRegistroRepClave.text.toString() + "\n"
-                            )
+                          FirebaseAuth.getInstance().createUserWithEmailAndPassword(txtMailUsuario.text.toString(),
+                              txtRegistroClave.text.toString()).addOnCompleteListener {
 
-                            archivoRegistro.flush()
-                            archivoRegistro.close()
+                              if (it.isSuccessful)
+                              {
+
+                              }else
+                              {
+                                  showAlert()
+                              }
+                          }
+
                             claseFunciones.ttoas("Registro exitoso!!!",this)
                         }
                     }
                 }
-
-
         } catch (e: IOException) {
             claseFunciones.ttoas("Error al registrar usuario",this)
         }
 
     }
 
+    private fun showAlert()
+    {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Error")
+        builder.setMessage("Error autentificando usuario")
+        builder.setPositiveButton("Aceptar", null)
+        val dialog: AlertDialog = builder.create()
+        dialog.show()
+    }
+
+    //Funcion para chequear clave
     private fun chequeaClave(): Boolean
     {
         var check:Boolean = false
@@ -76,17 +96,19 @@ class Registro : AppCompatActivity() {
         return check
     }
 
+    //funcion de registro vacio
     private fun registroVacio(): Boolean
     {
-        var check:Boolean = true
-            if (txtRegistroUsuario.text.toString() == "" || txtMailUsuario.text.toString() == "" ||
-                txtRegistroClave.text.toString() == "" || txtRegistroRepClave.text.toString() == "")
+        var check:Boolean = false
+            if (txtRegistroUsuario.text.isNotEmpty() && txtMailUsuario.text.isNotEmpty() &&
+                txtRegistroClave.text.isNotEmpty() && txtRegistroRepClave.text.isNotEmpty())
             {
-                check = false
+                check = true
             }
         return check
     }
 
+    //funcion validar mail
     private fun validarEmail(email: String): Boolean {
         val pattern: Pattern = Patterns.EMAIL_ADDRESS
         return pattern.matcher(email).matches()

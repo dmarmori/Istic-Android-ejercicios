@@ -4,7 +4,7 @@
             "outputFile": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-lv\\values-lv.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\04058c47b6a5524333638abe3b78baf6\\jetified-play-services-base-17.0.0\\res\\values-lv\\values.xml",
+                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\ad3d481aaca9c17dadbc648f2d562243\\jetified-play-services-base-17.1.0\\res\\values-lv\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\9bf6c53aed560b922f1970413da8f18f\\core-1.2.0\\res\\values-lv\\values-lv.xml",
+                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\88f7c0ab718bf5b094b2c9c23a840698\\core-1.3.0\\res\\values-lv\\values-lv.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

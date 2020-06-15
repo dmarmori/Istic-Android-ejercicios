@@ -21,24 +21,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\9bf6c53aed560b922f1970413da8f18f\\core-1.2.0\\res\\values-uz\\values-uz.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "48",
-                        "startColumns": "4",
-                        "startOffsets": "5589",
-                        "endColumns": "100",
-                        "endOffsets": "5685"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\04058c47b6a5524333638abe3b78baf6\\jetified-play-services-base-17.0.0\\res\\values-uz\\values.xml",
+                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\ad3d481aaca9c17dadbc648f2d562243\\jetified-play-services-base-17.1.0\\res\\values-uz\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -69,6 +52,23 @@
                         "startOffsets": "105,210,305,405,487,587,704,789,868,959,1051,1146,1240,1335,1428,1523,1618,1709,1801,1884,1994,2100,2200,2308,2414,2516,2677,5506",
                         "endColumns": "104,94,99,81,99,116,84,78,90,91,94,93,94,92,94,94,90,91,82,109,105,99,107,105,101,160,98,82",
                         "endOffsets": "205,300,400,482,582,699,784,863,954,1046,1141,1235,1330,1423,1518,1613,1704,1796,1879,1989,2095,2195,2303,2409,2511,2672,2771,5584"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Shiftha - Dionel\\.gradle\\caches\\transforms-2\\files-2.1\\88f7c0ab718bf5b094b2c9c23a840698\\core-1.3.0\\res\\values-uz\\values-uz.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "48",
+                        "startColumns": "4",
+                        "startOffsets": "5589",
+                        "endColumns": "100",
+                        "endOffsets": "5685"
                     }
                 }
             ]

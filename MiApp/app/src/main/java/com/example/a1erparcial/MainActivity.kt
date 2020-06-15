@@ -32,6 +32,7 @@ class MainActivity : AppCompatActivity() {
         analytics.logEvent("InitScreen",bundle)
 
 
+
         txtRegistroLogin.setOnClickListener{
             val registoIntent = Intent(this, Registro::class.java)
             startActivity(registoIntent)
@@ -84,4 +85,5 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
 }
