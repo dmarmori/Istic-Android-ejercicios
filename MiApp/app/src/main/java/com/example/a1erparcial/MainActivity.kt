@@ -15,12 +15,6 @@ import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
 
-    fun ttoas(mensaje:String){//Funcion para mensaje toast
-
-        var toast = Toast.makeText(this@MainActivity,"$mensaje",Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -71,13 +65,13 @@ class MainActivity : AppCompatActivity() {
                     }
                     if (existeUsuario == false)
                     {
-                       this.ttoas("Usuario inexistente")
+                        claseFunciones.ttoas("Usuario inexistente",this)
                     }
                     br.close()
                     archivoUsuarios.close()
 
                 } catch (e: IOException) {
-                    this.ttoas("Error al ingresar")
+                    claseFunciones.ttoas("Error al ingresar",this)
                 }
             }
         }

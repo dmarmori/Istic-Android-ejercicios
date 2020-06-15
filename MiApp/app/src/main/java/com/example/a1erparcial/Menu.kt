@@ -16,13 +16,9 @@ class Menu : AppCompatActivity() {
         val usrlogin=intent.getStringExtra("usuarioLogueado");
         if(usrlogin == null)//Valido si el dato viene null
         {
-            val toast = Toast.makeText(this@Menu, "Bienvenido", Toast.LENGTH_SHORT)
-            toast.setGravity(Gravity.CENTER, 0, 0)
-            toast.show()
+            claseFunciones.ttoas("Bienvenido",this)
         }else {
-            val toast = Toast.makeText(this@Menu, "Bienvenido $usrlogin", Toast.LENGTH_SHORT)
-            toast.setGravity(Gravity.CENTER, 0, 0)
-            toast.show()
+            claseFunciones.ttoas("Bienvenido $usrlogin",this)
         }
 
         btnContador.setOnClickListener {
@@ -36,9 +32,7 @@ class Menu : AppCompatActivity() {
         }
 
         lblLegajo.setOnClickListener {
-        val toast = Toast.makeText(this@Menu,"Numero de Legajo", Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
+            claseFunciones.ttoas("Numero de Legajo",this)
         }
     }
 }

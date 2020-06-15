@@ -14,12 +14,6 @@ import java.util.regex.Pattern
 
 class Registro : AppCompatActivity() {
 
-    fun ttoas(mensaje:String){//Funcion para mensaje toast
-
-        var toast = Toast.makeText(this@Registro,"$mensaje", Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,17 +33,17 @@ class Registro : AppCompatActivity() {
         try {
                 if(registroVacio()==false)
             {
-                this.ttoas("Todos los campos son obligatorios")
+                claseFunciones.ttoas("Todos los campos son obligatorios",this)
             }else
                 {
                     if (!validarEmail(txtMailUsuario.text.toString()))
                     {
-                        this.ttoas("Email no válido")
+                        claseFunciones.ttoas("Email no válido",this)
                     }else
                     {
                         if (chequeaClave()==false)
                         {
-                            this.ttoas("Las claves deben coincidir")
+                            claseFunciones.ttoas("Las claves deben coincidir",this)
                         }else
                         {
                             val archivoRegistro = OutputStreamWriter(openFileOutput("registro.txt", Activity.MODE_APPEND))
@@ -60,14 +54,14 @@ class Registro : AppCompatActivity() {
 
                             archivoRegistro.flush()
                             archivoRegistro.close()
-                            this.ttoas("Registro exitoso!!!")
+                            claseFunciones.ttoas("Registro exitoso!!!",this)
                         }
                     }
                 }
 
 
         } catch (e: IOException) {
-            this.ttoas("Error al registrar usuario")
+            claseFunciones.ttoas("Error al registrar usuario",this)
         }
 
     }

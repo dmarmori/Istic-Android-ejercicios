@@ -23,22 +23,16 @@ class NumeroSecreto : AppCompatActivity() {
     var ayuda:Int = 1
     var numeroMultiplicado:Int = 0
 
-    fun ttoas(mensaje:String){//Funcion para mensaje toast
-
-        var toast = Toast.makeText(this@NumeroSecreto,"$mensaje",Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
-    }
 
     fun pista(NumeroPista:Int)
     {
         if (numeroSecreto.toString() > txtIngNum.text.toString())
         {
-            this.ttoas("Dale para Arriba")
+            claseFunciones.ttoas("Dale para Arriba",this)
         }
         if (numeroSecreto.toString() < txtIngNum.text.toString())
         {
-            this.ttoas("Dale para abajo")
+            claseFunciones.ttoas("Dale para abajo",this)
         }
 
     }
@@ -64,28 +58,28 @@ class NumeroSecreto : AppCompatActivity() {
                 1 ->
                     if (numeroSecreto <= 50)
                     {
-                        this.ttoas("Numero Menor a 51")
+                        claseFunciones.ttoas("Numero Menor a 51",this)
                     } else
                     {
-                        this.ttoas("Numero mayor a 50")
+                        claseFunciones.ttoas("Numero mayor a 50",this)
                     }
 
                 2 ->
                     if (numeroSecreto %2 == 0)
                     {
-                        this.ttoas("El numero es PAR")
+                        claseFunciones.ttoas("El numero es PAR",this)
                     }else
                     {
-                        this.ttoas("El numero es IMPAR")
+                        claseFunciones.ttoas("El numero es IMPAR",this)
                     }
                 3 ->
                 {
                     numeroMultiplicado = (numeroSecreto * 2 * 2 * 2 * 2)/2
-                    this.ttoas("(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado")
+                    claseFunciones.ttoas("(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado",this)
                 }
                 else ->
                 {
-                    this.ttoas("(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado")
+                    claseFunciones.ttoas("(Numero * 2 * 2 * 2 * 2)/2 = $numeroMultiplicado",this)
                 }
 
             }
@@ -102,10 +96,7 @@ class NumeroSecreto : AppCompatActivity() {
 
         btnMeRindo.setOnClickListener{ //Boton me rindo
 
-            //val toast = Toast.makeText(this@NumeroSecreto,"El numero era: $numeroSecreto",Toast.LENGTH_SHORT)
-            //toast.setGravity(Gravity.CENTER,0,0)
-            //toast.show()
-            this.ttoas("El numero era: $numeroSecreto")
+            claseFunciones.ttoas("El numero era: $numeroSecreto",this)
 
             btnAdivinar.isEnabled = false
             btnAyuda.isEnabled = false
@@ -124,7 +115,7 @@ class NumeroSecreto : AppCompatActivity() {
 
             if(NumInicial == "")
             {
-                this.ttoas("Debe ingresar un Numero")
+                claseFunciones.ttoas("Debe ingresar un Numero",this)
             }else {
 
                 val numero = txtIngNum.text.toString().toInt()
@@ -133,11 +124,11 @@ class NumeroSecreto : AppCompatActivity() {
                     if (vidas > 1) {
                         if (numeroSecreto.toString() == txtIngNum.text.toString()) {
                             if (ayuda < 3) {
-                                this.ttoas("Ganaste Crack ")
+                                claseFunciones.ttoas("Ganaste Crack ",this)
                                 txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
                                 botonDatosAdivina.isEnabled = true
                             } else {
-                                this.ttoas("Ganaste con ayudin")
+                                claseFunciones.ttoas("Ganaste con ayudin",this)
                                 txtResFinal.text = "GANASTE CON AYUDIN COMO RIBER"
                                 botonDatosAdivina.isEnabled = true
                             }
@@ -161,7 +152,7 @@ class NumeroSecreto : AppCompatActivity() {
                             txtIntentos.text = "Numero de intentos: " + intentos
                         }
                     } else {
-                        this.ttoas("PERDISTE Intentalo otra vez")
+                        claseFunciones.ttoas("PERDISTE Intentalo otra vez",this)
                         vidas = vidas - 1
                         intentos = intentos + 1
                         txtVidas.text = "Vidas restantes: " + vidas
@@ -175,7 +166,7 @@ class NumeroSecreto : AppCompatActivity() {
                     }
 
                 } else {
-                    this.ttoas("El nuemero debe ser MENOR A 100")
+                    claseFunciones.ttoas("El nuemero debe ser MENOR A 100",this)
                 }
             }
 
@@ -195,7 +186,7 @@ class NumeroSecreto : AppCompatActivity() {
                 startActivity(guardarDatosAdivinaIntent)
 
             } catch (e: IOException) {
-                this.ttoas("Error intente nuevamente")
+                claseFunciones.ttoas("Error intente nuevamente",this)
             }
 
         }
