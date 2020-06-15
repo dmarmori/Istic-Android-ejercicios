@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "886074309171",
+    "firebase_url": "https://myapp-istic-dionelmarmori.firebaseio.com",
+    "project_id": "myapp-istic-dionelmarmori",
+    "storage_bucket": "myapp-istic-dionelmarmori.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886074309171:android:498c123af1eb4473150146",
+        "android_client_info": {
+          "package_name": "com.example.a1erparcial"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886074309171-4cagi7gb7uknpmfqe1a2h150f3r2n8s1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCle_NrMSoKRQXwBB7XG519JWQ66A51E4U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886074309171-4cagi7gb7uknpmfqe1a2h150f3r2n8s1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
