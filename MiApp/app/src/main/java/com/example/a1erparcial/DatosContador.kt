@@ -18,12 +18,6 @@ import java.io.OutputStreamWriter
 
 class DatosContador : AppCompatActivity() {
 
-    fun ttoas(mensaje:String){//Funcion para mensaje toast
-
-        var toast = Toast.makeText(this@DatosContador,"$mensaje", Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,9 +58,9 @@ class DatosContador : AppCompatActivity() {
             archivoContador.flush()
             archivoContador.close()
         }catch (e: IOException) {
-            this.ttoas("Error al guardar datos")
+            claseFunciones.ttoas("Error al guardar datos",this)
         }
-        this.ttoas("Guardando...")
+        claseFunciones.ttoas("Guardando...",this)
         fCargarListadoContador()
     }
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -79,7 +73,7 @@ class DatosContador : AppCompatActivity() {
             btnBorrarDialogBuilder.setMessage("¿Esta seguro de eliminar el archivo del listado?")
             btnBorrarDialogBuilder.setCancelable(false)
             btnBorrarDialogBuilder.setPositiveButton("Si") {_,_->
-                this.ttoas("Eliminando...")
+                claseFunciones.ttoas("Eliminando...",this)
                 fCargarListadoContador()
                 deleteFile("datosContador.txt")
                 finish()
@@ -94,7 +88,7 @@ class DatosContador : AppCompatActivity() {
             btnBorrarDialog.show()
 
         }catch (e: IOException) {
-            this.ttoas("Error al eliminar listado")
+            claseFunciones.ttoas("Error al eliminar listado",this)
         }
     }
 ///////////////////////////////////////////////////////////////////////////////
@@ -114,7 +108,7 @@ class DatosContador : AppCompatActivity() {
                 archivoContador.close()
                 this.txtMultilineCont.setText(listado)
             } catch (e: IOException) {
-                this.ttoas("Error al cargar los datos")
+                claseFunciones.ttoas("Error al cargar los datos",this)
             }
         }
 

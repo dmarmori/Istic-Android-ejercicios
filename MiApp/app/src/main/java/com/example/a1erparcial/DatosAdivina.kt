@@ -18,12 +18,6 @@ import java.io.OutputStreamWriter
 
 class DatosAdivina : AppCompatActivity() {
 
-    fun ttoas(mensaje:String){//Funcion para mensaje toast
-
-        var toast = Toast.makeText(this@DatosAdivina,"$mensaje", Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -66,9 +60,9 @@ class DatosAdivina : AppCompatActivity() {
             archivoAdivina.flush()
             archivoAdivina.close()
         }catch (e: IOException) {
-            this.ttoas("Error al guardar datos")
+            claseFunciones.ttoas("Error al guardar datos",this)
         }
-        this.ttoas("Guardando...")
+        claseFunciones.ttoas("Guardando...",this)
         fCargarListadoAdivina()
 
     }
@@ -82,7 +76,7 @@ class DatosAdivina : AppCompatActivity() {
             btnBorrarDialogBuilder.setMessage("¿Esta seguro de eliminar el archivo del listado?")
             btnBorrarDialogBuilder.setCancelable(false)
             btnBorrarDialogBuilder.setPositiveButton("Si") {_,_->
-                this.ttoas("Eliminando...")
+                claseFunciones.ttoas("Eliminando...",this)
                 deleteFile("datosAdivina.txt")
                 finish()
             }
@@ -96,7 +90,7 @@ class DatosAdivina : AppCompatActivity() {
             btnBorrarDialog.show()
 
         }catch (e: IOException) {
-            this.ttoas("Error al eliminar listado")
+            claseFunciones.ttoas("Error al eliminar listado",this)
         }
     }
 ///////////////////////////////////////////////////////////////////////////
@@ -116,7 +110,7 @@ class DatosAdivina : AppCompatActivity() {
                 archivoAdivina.close()
                 this.txtMultilineAdivina.setText(listado)
             } catch (e: IOException) {
-                this.ttoas("Error al cargar los datos")
+                claseFunciones.ttoas("Error al cargar los datos",this)
             }
         }
     }

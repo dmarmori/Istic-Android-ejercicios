@@ -14,12 +14,6 @@ class Contador : AppCompatActivity() {
 
     var contador:Int=0
 
-    fun ttoas(mensaje:String){//Funcion para mensaje toast
-
-        var toast = Toast.makeText(this@Contador,"$mensaje", Toast.LENGTH_SHORT)
-        toast.setGravity(Gravity.CENTER,0,0)
-        toast.show()
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -53,7 +47,7 @@ class Contador : AppCompatActivity() {
         botonDatosCont.setOnClickListener {
             if (lblContador.text == "" || lblContador.text.toString().toInt() == 0)
             {
-                this.ttoas("Contador Vacio ó igual a 0")
+                claseFunciones.ttoas("Contador Vacio ó igual a 0",this)
             }else {
                 val datoContado = lblContador.text
                 val guardarDatosContIntent = Intent(this, DatosContador::class.java)
