@@ -2,6 +2,7 @@ package com.example.a1erparcial
 
 import android.app.Activity
 import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.util.Patterns
 import android.view.Gravity
@@ -58,6 +59,10 @@ class Registro : AppCompatActivity() {
 
                               if (it.isSuccessful)
                               {
+                                  val UsuarioOk = txtMailUsuario.text.toString()
+                                  val ActividadMain = Intent(this, MainActivity::class.java)
+                                  ActividadMain.putExtra("RegistroOk", "$UsuarioOk")
+                                  startActivity(ActividadMain)
 
                               }else
                               {
@@ -65,7 +70,6 @@ class Registro : AppCompatActivity() {
                               }
                           }
 
-                            claseFunciones.ttoas("Registro exitoso!!!",this)
                         }
                     }
                 }

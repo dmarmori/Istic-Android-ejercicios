@@ -16,6 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="64dp"
         android:backgroundTint="@android:color/background_light"
+        android:editable="true"
         android:ems="10"
         android:fontFamily="@font/archivo_black"
         android:hint="Usuario"

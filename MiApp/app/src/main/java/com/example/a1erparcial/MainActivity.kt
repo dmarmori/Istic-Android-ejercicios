@@ -3,9 +3,11 @@ package com.example.a1erparcial
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
 import android.widget.Toast
 import android.view.Gravity
 import android.widget.Button
+import androidx.core.text.set
 import com.google.firebase.analytics.FirebaseAnalytics
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_registro.*
@@ -17,6 +19,7 @@ import kotlin.concurrent.thread
 class MainActivity : AppCompatActivity() {
 
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
 
         //Thread.sleep(1000)
@@ -24,6 +27,17 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //Funcion para converir a String una los editTexi
+        fun String.toEditable(): Editable =  Editable.Factory.getInstance().newEditable(this)
+
+        //Si esta bien registrado entra aca
+        val UsuarioOk  =intent.getStringExtra("RegistroOk");
+        if(UsuarioOk != null)//Valido si el dato viene null
+        {
+            txtUsuarioLogin.text = UsuarioOk.toEditable()
+            claseFunciones.ttoas("Registro exitoso!!!",this)
+        }
 
         //GoogleAnalytic Event
         val analytics : FirebaseAnalytics = FirebaseAnalytics.getInstance(this)
