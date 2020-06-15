@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Toast
 import android.view.Gravity
 import android.widget.Button
+import com.google.firebase.analytics.FirebaseAnalytics
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.activity_registro.*
 import java.io.BufferedReader
@@ -23,6 +24,12 @@ class MainActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        //GoogleAnalytic Event
+        val analytics : FirebaseAnalytics = FirebaseAnalytics.getInstance(this)
+        val bundle = Bundle()
+        bundle.putString("Message","Integracion de Firebases completa")
+        analytics.logEvent("InitScreen",bundle)
 
 
         txtRegistroLogin.setOnClickListener{
