@@ -812,6 +812,7 @@ id btnIrAContar
 id btnJuegoNuevo
 id btnMeRindo
 id btnNumSec
+id btnOut
 id btnRegistrarme
 id btnReserContador
 id btnRestar

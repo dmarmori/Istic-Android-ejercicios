@@ -42,11 +42,15 @@ class Registro : AppCompatActivity() {
                 if(registroVacio()==false)
             {
                 claseFunciones.ttoas("Todos los campos son obligatorios",this)
+                this.txtMailUsuario.error = "Debes ingresar un email valido"
+                this.txtMailUsuario.requestFocus()
             }else
                 {
                     if (!validarEmail(txtMailUsuario.text.toString()))
                     {
                         claseFunciones.ttoas("Email no válido",this)
+                        this.txtMailUsuario.error = "Debes ingresar un email valido"
+                        this.txtMailUsuario.requestFocus()
                     }else
                     {
                         if (chequeaClave()==false)
@@ -54,22 +58,26 @@ class Registro : AppCompatActivity() {
                             claseFunciones.ttoas("Las claves deben coincidir",this)
                         }else
                         {
-                          FirebaseAuth.getInstance().createUserWithEmailAndPassword(txtMailUsuario.text.toString(),
-                              txtRegistroClave.text.toString()).addOnCompleteListener {
+                            if (largoclave() == true)
+                            {
+                                this.txtRegistroClave.error = "Minimo 6 caracteres"
+                                this.txtRegistroClave.requestFocus()
+                            } else
+                            {
+                                FirebaseAuth.getInstance().createUserWithEmailAndPassword(txtMailUsuario.text.toString(),
+                                    txtRegistroClave.text.toString()).addOnCompleteListener {
+                                    if (it.isSuccessful) {
+                                        val UsuarioOk = txtMailUsuario.text.toString()
+                                        val ActividadMain = Intent(this, MainActivity::class.java)
+                                        ActividadMain.putExtra("RegistroOk", "$UsuarioOk")
+                                        startActivity(ActividadMain)
 
-                              if (it.isSuccessful)
-                              {
-                                  val UsuarioOk = txtMailUsuario.text.toString()
-                                  val ActividadMain = Intent(this, MainActivity::class.java)
-                                  ActividadMain.putExtra("RegistroOk", "$UsuarioOk")
-                                  startActivity(ActividadMain)
+                                    } else {
+                                        showAlert()
+                                    }
+                                }
 
-                              }else
-                              {
-                                  showAlert()
-                              }
-                          }
-
+                            }
                         }
                     }
                 }
@@ -117,6 +125,16 @@ class Registro : AppCompatActivity() {
     private fun validarEmail(email: String): Boolean {
         val pattern: Pattern = Patterns.EMAIL_ADDRESS
         return pattern.matcher(email).matches()
+    }
+
+    private fun largoclave(): Boolean
+    {
+        var largo : Boolean = false
+        if(txtRegistroClave.length() in 1..5)
+        {
+            largo = true
+        }
+        return largo
     }
 
 }
