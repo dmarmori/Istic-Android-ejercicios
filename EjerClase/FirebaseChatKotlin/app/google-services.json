@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "201522269225",
+    "firebase_url": "https://primerchat-8a038.firebaseio.com",
+    "project_id": "primerchat-8a038",
+    "storage_bucket": "primerchat-8a038.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:201522269225:android:0734af5839300a57f6a038",
+        "android_client_info": {
+          "package_name": "com.example.firebasechatkotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "201522269225-kn39e2m0sanofjd0qsf6t0n9gf9gqfr2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAFC-YkoKLNraFlKXbQp8wEVWsCR4N0io8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "201522269225-8bm4p3f2b4h2nmd3aqggptqk4qlekrtq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

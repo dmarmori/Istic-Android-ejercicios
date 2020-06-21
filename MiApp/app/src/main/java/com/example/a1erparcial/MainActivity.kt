@@ -66,6 +66,10 @@ class MainActivity : AppCompatActivity() {
         if (registroVacio()==false)
         {
            claseFunciones.ttoas("Ingrese usuario y clave",this)
+            this.txtUsuarioLogin.error = "Ingrese un Mail"
+            this.txtClaveLogin.error = "Ingrese la clave"
+            this.txtUsuarioLogin.requestFocus()
+            this.txtClaveLogin.requestFocus()
         }else {
                 try {
 

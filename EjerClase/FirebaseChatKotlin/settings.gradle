@@ -1,0 +1,2 @@
+rootProject.name='FirebaseChatKotlin'
+include ':app'

@@ -42,8 +42,6 @@ class Registro : AppCompatActivity() {
                 if(registroVacio()==false)
             {
                 claseFunciones.ttoas("Todos los campos son obligatorios",this)
-                this.txtMailUsuario.error = "Debes ingresar un email valido"
-                this.txtMailUsuario.requestFocus()
             }else
                 {
                     if (!validarEmail(txtMailUsuario.text.toString()))
@@ -56,6 +54,10 @@ class Registro : AppCompatActivity() {
                         if (chequeaClave()==false)
                         {
                             claseFunciones.ttoas("Las claves deben coincidir",this)
+                            this.txtRegistroClave.error = "Claves no coinciden"
+                            this.txtRegistroRepClave.error = "Claves no coinciden"
+                            this.txtRegistroClave.requestFocus()
+                            this.txtRegistroRepClave.requestFocus()
                         }else
                         {
                             if (largoclave() == true)
