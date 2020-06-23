@@ -48,6 +48,10 @@
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\drawable\\btn_reunded.xml"
     },
     {
+        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_hide_password_24dp.xml.flat",
+        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\drawable\\ic_hide_password_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_contador.xml.flat",
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\layout\\activity_contador.xml"
     },
@@ -126,6 +130,10 @@
     {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_contar.jpg.flat",
         "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\drawable\\contar.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_show_password_24dp.xml.flat",
+        "source": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\src\\main\\res\\drawable\\ic_show_password_24dp.xml"
     },
     {
         "merged": "C:\\Users\\Shiftha - Dionel\\Documents\\Otros\\Dionel\\F\\2\\1erC\\PP2\\AndroidISTIC\\Istic-Android-ejercicios\\MiApp\\app\\build\\intermediates\\res\\merged\\debug\\drawable_login.png.flat",

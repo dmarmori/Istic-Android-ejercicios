@@ -5,6 +5,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.Editable
+import android.text.method.HideReturnsTransformationMethod
+import android.text.method.PasswordTransformationMethod
 import android.widget.Toast
 import android.view.Gravity
 import android.widget.Button
@@ -20,7 +22,7 @@ import kotlin.concurrent.thread
 
 class MainActivity : AppCompatActivity() {
 
-
+    private var mIsShowPass = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -59,6 +61,27 @@ class MainActivity : AppCompatActivity() {
             loginArchivo()
 
         }
+
+        ivShowHidePass.setOnClickListener {
+            mIsShowPass = !mIsShowPass
+            showPassword(mIsShowPass)
+        }
+
+        showPassword(mIsShowPass)
+    }
+
+    private fun showPassword(isShow: Boolean) {
+        if (isShow) {
+            // To show the password
+            txtClaveLogin.transformationMethod = HideReturnsTransformationMethod.getInstance()
+            ivShowHidePass.setImageResource(R.drawable.ic_hide_password_24dp)
+        } else {
+            // To hide the password
+            txtClaveLogin.transformationMethod = PasswordTransformationMethod.getInstance()
+            ivShowHidePass.setImageResource(R.drawable.ic_show_password_24dp)
+        }
+        // Esta línea de código para colocar el puntero al final de la cadena de contraseña
+        txtClaveLogin.setSelection(txtClaveLogin.text.toString().length)
     }
 
     private fun loginArchivo()

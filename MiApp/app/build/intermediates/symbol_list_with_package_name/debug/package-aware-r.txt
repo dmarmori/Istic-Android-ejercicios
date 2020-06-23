@@ -709,8 +709,10 @@ drawable fondo1
 drawable git
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable ic_hide_password_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_show_password_24dp
 drawable legajo
 drawable login
 drawable notification_action_background
@@ -868,6 +870,7 @@ id imgSalirCont
 id info
 id invisible
 id italic
+id ivShowHidePass
 id lblComoJugar
 id lblComoJugar2
 id lblContador
