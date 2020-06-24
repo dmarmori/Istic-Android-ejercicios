@@ -58,7 +58,9 @@ class Menu : AppCompatActivity() {
         btnsalir.setPositiveButton("Si") {_,_->
             FirebaseAuth.getInstance().signOut()
             val ActividadMail = Intent(this, MainActivity::class.java)
-            finish()
+            //finish()
+            //Cierra todas las actividades de la cola
+            finishAffinity()
             startActivity(ActividadMail)
         }
         btnsalir.setNegativeButton("No") { _, _ ->
