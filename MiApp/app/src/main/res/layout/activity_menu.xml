@@ -32,34 +32,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/dionel" />
 
-    <Button
-        android:id="@+id/btnNumSec"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginEnd="28dp"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:text="Numero Secreto"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblComoJugar" />
-
-    <Button
-        android:id="@+id/btnContador"
-        android:layout_width="140dp"
-        android:layout_height="70dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="40dp"
-        android:backgroundTint="@android:color/holo_red_dark"
-        android:text="Contador"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/btnNumSec"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/lblComoJugar" />
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="52dp"
@@ -148,5 +120,35 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@android:drawable/ic_lock_power_off" />
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="93dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblComoJugar"
+        app:layout_constraintVertical_bias="0.17">
+
+        <Button
+            android:id="@+id/btnNumSec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Numero Secreto"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnContador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/holo_red_dark"
+            android:text="Contador"
+            android:textColor="@android:color/background_light"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

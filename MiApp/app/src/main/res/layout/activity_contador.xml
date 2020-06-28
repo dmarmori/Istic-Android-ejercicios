@@ -87,44 +87,46 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
-    <TextView
-        android:id="@+id/lblayuda"
-        android:layout_width="37dp"
-        android:layout_height="69dp"
-        android:layout_marginStart="36dp"
-        android:layout_marginTop="56dp"
-        android:linksClickable="true"
-        android:text="?"
-        android:textColor="@android:color/background_light"
-        android:textSize="60sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnReserContador" />
-
-    <ImageView
-        android:id="@+id/btnGuardarDatosContador"
-        android:layout_width="58dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="32dp"
-        android:tint="@android:color/background_light"
-        android:tintMode="multiply"
+    <LinearLayout
+        android:layout_width="348dp"
+        android:layout_height="72dp"
+        android:layout_marginBottom="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnReserContador"
-        app:srcCompat="@android:drawable/ic_menu_save" />
+        app:layout_constraintVertical_bias="0.368">
 
-    <ImageView
-        android:id="@+id/imgMenu"
-        android:layout_width="58dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="64dp"
-        android:layout_marginEnd="40dp"
-        android:backgroundTint="@android:color/background_light"
-        android:foregroundTint="@android:color/background_light"
-        android:tint="@android:color/background_light"
-        android:tintMode="multiply"
-        app:layout_constraintEnd_toStartOf="@+id/btnGuardarDatosContador"
-        app:layout_constraintTop_toBottomOf="@+id/btnReserContador"
-        app:srcCompat="@android:drawable/ic_menu_sort_by_size"
-        tools:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+        <ImageView
+            android:id="@+id/imgMenu"
+            android:layout_width="72dp"
+            android:layout_height="52dp"
+            android:backgroundTint="@android:color/background_light"
+            android:foregroundTint="@android:color/background_light"
+            android:tint="@android:color/background_light"
+            android:tintMode="multiply"
+            app:srcCompat="@android:drawable/ic_menu_sort_by_size"
+            tools:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+        <TextView
+            android:id="@+id/lblayuda"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:linksClickable="true"
+            android:text="?"
+            android:textColor="@android:color/background_light"
+            android:textSize="60sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/btnGuardarDatosContador"
+            android:layout_width="72dp"
+            android:layout_height="52dp"
+            android:tint="@android:color/background_light"
+            android:tintMode="multiply"
+            app:srcCompat="@android:drawable/ic_menu_save" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
