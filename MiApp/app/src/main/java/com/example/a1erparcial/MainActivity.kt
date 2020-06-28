@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
                             startActivity(menuIntent)
                         }else
                         {
-                            claseFunciones.ttoas("Usuario inexistente",this)
+                            claseFunciones.ttoas("Creenciales incorrectas",this)
                         }
                     }
 
