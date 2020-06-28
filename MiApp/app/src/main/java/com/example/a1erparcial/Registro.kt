@@ -26,9 +26,9 @@ class Registro : AppCompatActivity() {
         setContentView(R.layout.activity_registro)
 
 
-        val botonRegistrar = findViewById<Button>(R.id.btnRegistrarme)
+        val botonRegistrarMail = findViewById<Button>(R.id.btnRegistrarme)
 
-        botonRegistrar.setOnClickListener{
+        botonRegistrarMail.setOnClickListener{
         registrarUsuario()
         }
 

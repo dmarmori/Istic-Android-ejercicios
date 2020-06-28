@@ -9,6 +9,8 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_contador.*
+import kotlinx.android.synthetic.main.activity_contador.compartirButton
+import kotlinx.android.synthetic.main.activity_numero_secreto.*
 
 class Contador : AppCompatActivity() {
 
@@ -62,5 +64,28 @@ class Contador : AppCompatActivity() {
             startActivity(irMenuIntent)
             finish()
         }
+
+        val botonCompartir = findViewById<Button>(R.id.compartirButton) //Declaracion para boton Compartir
+        //Compartir
+        compartirButton.setOnClickListener{
+            if (lblContador.text == "" || lblContador.text.toString().toInt() == 0)
+            {
+                claseFunciones.ttoas("Contador Vacio ó igual a 0",this)
+            }else {
+                compartir()
+            }
+        }
+    }
+
+    //Funcion para compratir
+    private fun compartir(){
+        val datoContado = lblContador.text
+        val intent = Intent()
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_TEXT, "Elementos contados: $datoContado \nMi App Dionel Marmori")
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Mail enviado desde mi app")
+        intent.action = Intent.ACTION_SEND
+        val chooseIntent = Intent.createChooser(intent, "Elija una opcion")
+        startActivity(chooseIntent)
     }
 }
