@@ -826,6 +826,7 @@ id checkbox
 id checked
 id chronometer
 id collapseActionView
+id compartirButton
 id content
 id contentPanel
 id custom

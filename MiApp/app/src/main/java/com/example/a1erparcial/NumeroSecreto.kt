@@ -48,8 +48,16 @@ class NumeroSecreto : AppCompatActivity() {
 
         val botonDatosAdivina = findViewById<ImageView>(R.id.btnGuardarDatosAdivina) //Declaracion para boton ingresar
         botonDatosAdivina.isEnabled = false //Declaro el boton guardar arriba y lo inicio deshabilitado
+        val botonCompartir = findViewById<Button>(R.id.compartirButton) //Declaracion para boton Compartir
+        botonCompartir.isEnabled = false //Declaro el boton Compratir arriba y lo inicio deshabilitado
 
         ///////////////////////////////////////////////////////////////////////////////////////////////////
+
+        //Compartir
+        compartirButton.setOnClickListener{
+           compartir()
+        }
+
 
         btnAyuda.setOnClickListener{ //Boton de ayuda
             super.onRestart();
@@ -127,10 +135,12 @@ class NumeroSecreto : AppCompatActivity() {
                                 claseFunciones.ttoas("Ganaste Crack ",this)
                                 txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
                                 botonDatosAdivina.isEnabled = true
+                                botonCompartir.isEnabled = true
                             } else {
                                 claseFunciones.ttoas("Ganaste con ayudin",this)
                                 txtResFinal.text = "GANASTE CON AYUDIN COMO RIBER"
                                 botonDatosAdivina.isEnabled = true
+                                botonCompartir.isEnabled = true
                             }
                             vidas = vidas - 1
                             intentos = intentos + 1
@@ -207,6 +217,18 @@ class NumeroSecreto : AppCompatActivity() {
         }
 
 
+    }
+
+    //Funcion para compratir
+    private fun compartir(){
+        val datosAdivina = intentos.toString()
+        val intent = Intent()
+        intent.type = "text/plain"
+        intent.putExtra(Intent.EXTRA_TEXT, "Adivine en: $datosAdivina intentos \nMi App Dionel Marmori")
+        intent.putExtra(Intent.EXTRA_SUBJECT, "Mail enviado desde mi app")
+        intent.action = Intent.ACTION_SEND
+        val chooseIntent = Intent.createChooser(intent, "Elija una opcion")
+        startActivity(chooseIntent)
     }
 
 
