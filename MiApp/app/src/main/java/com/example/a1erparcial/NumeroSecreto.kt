@@ -133,11 +133,13 @@ class NumeroSecreto : AppCompatActivity() {
                         if (numeroSecreto.toString() == txtIngNum.text.toString()) {
                             if (ayuda < 3) {
                                 claseFunciones.ttoas("Ganaste Crack ",this)
+                                claseFunciones.ttoas("Numero: $numeroSecreto",this)
                                 txtResFinal.text = "GANASTE!! SEGURO SOS DE BOCA"
                                 botonDatosAdivina.isEnabled = true
                                 botonCompartir.isEnabled = true
                             } else {
                                 claseFunciones.ttoas("Ganaste con ayudin",this)
+                                claseFunciones.ttoas("Numero: $numeroSecreto",this)
                                 txtResFinal.text = "GANASTE CON AYUDIN COMO RIBER"
                                 botonDatosAdivina.isEnabled = true
                                 botonCompartir.isEnabled = true
@@ -171,7 +173,8 @@ class NumeroSecreto : AppCompatActivity() {
                         btnMeRindo.isEnabled = false
                         btnAyuda.isEnabled = false
                         txtIngNum.isEnabled = false
-                        txtResFinal.text = "PERDISTE!!! SEGURO SOS DE RIBER"
+                        txtResFinal.text = "PERDISTE!!!"
+                        claseFunciones.ttoas("Numero: $numeroSecreto",this)
                         txtResFinal.visibility = View.VISIBLE
                     }
 
